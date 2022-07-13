@@ -1,19 +1,35 @@
 {
   "name": "oasis-api",
   "version": "0.1.0",
-  "description": "A JavaScript proxy for the Oasis API. To be used only in the browser.",
+  "description": "A JavaScript proxy for the OASIS API. To be used only in the browser.",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/derek-dv/oasis-api.git"
+    "url": "https://github.com/NextGenSoftwareUK/OASIS-API-Javascipt-Package.git"
   },
   "homepage": "https://github.com/NextGenSoftwareUK/Our-World-OASIS-API-HoloNET-HoloUnity-And-.NET-HDK#readme",
-  "author": "Oasis team",
+  "author": "OASIS Team",
   "license": "MIT",
   "keywords": [
-    "oasis",
-    "API",
-    "Karma"
+    "OASIS API",
+    "Avatar API",
+    "Karma API",
+    "Data API",
+    "SEEDS API",
+    "Keys/Wallets API",
+    "WEB 4",
+    "Interoperable",
+    "Holochain",
+    "IPFS",
+    "Solana",
+    "EOS",
+    "Ethereum",
+    "MongoDB",
+    "Neo4j",
+    "SQLLite",
+    "ThreeFold",
+    "SOLID",
+    "ActivityPub"
   ],
   "dependencies": {
     "axios": "^0.26.1"
