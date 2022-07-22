@@ -1,4 +1,4 @@
-# WEB4 OASIS API
+# WEB4 OASIS API Javascript Package
 
 This package is for client applications to connect and work with the OASIS API
 Various oasis-api functions and services can be accessed with this API such as Authentication, Karma, Avatars.
