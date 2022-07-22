@@ -43,9 +43,9 @@ Check out the main repo for more info:
 https://github.com/NextGenSoftwareUK/Our-World-OASIS-API-HoloNET-HoloUnity-And-.NET-HDK
 
 And here:
-https://www.ourworldthegame.com/single-post/what-is-web4-web5-really
-https://www.ourworldthegame.com/single-post/first-production-ready-release-of-web4-oasis-api-more
-https://www.ourworldthegame.com/single-post/announcing-star-odk-hdk-cosmic 
+https://www.ourworldthegame.com/single-post/what-is-web4-web5-really <br>
+https://www.ourworldthegame.com/single-post/first-production-ready-release-of-web4-oasis-api-more <br>
+https://www.ourworldthegame.com/single-post/announcing-star-odk-hdk-cosmic  <br>
 https://www.ourworldthegame.com/single-post/star-odk-hdk-cosmic-oasis-api-our-world-update 
 
 ## How To Use
