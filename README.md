@@ -21,7 +21,7 @@ The OASIS API features a powerful Avatar SSO API allowing one login across all y
 
 It also features the Data API allowing data to be shared between the above providers giving for interoperability. It also has powerful features such as auto-fail over, auto-load balancing and auto-replication across the providers so if one node goes down in your local area it will automatically switch to the next fastest node in your area independent of the network it belongs to, this way the OASIS API never has any downtime and will always be super fast and not reliant on only one network.
 
-The OASIS API also has a SEEDS API allowing people to earn karma for donating and paying with Seeds as well as when they invite or join Seeds. Read more here:
+The OASIS API also has a SEEDS API allowing people to earn karma for donating and paying with Seeds as well as when they invite or join Seeds. Read more here: https://joinseeds.earth/
 
 Finally it also features a Keys/Wallets API, which allows public private keys to be linked to your avatar per provider and private keys are only stored locally. Public keys and the rest of the wallet are stored on any provider. Because of the auto replication the private keys are automatically backed up to your local devices and can automatically sync between them so if you get a new device it can automatically sync with it, a bit like a decentralised offline cloud. 
 
