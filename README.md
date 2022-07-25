@@ -1,9 +1,7 @@
 # WEB4 OASIS API Javascript Package
 
-This package is for client applications to connect and work with the OASIS API
-Various oasis-api functions and services can be accessed with this API such as Authentication, Karma, Avatars.
-
 - [OASIS API](#oasis-api)
+  - [Introduction]
   - [Overview](#overview)
   - [Benefits Of Building On The WEB4 OASIS API](#web4-oasisapi-benefits)
   - [Getting started](#getting-started)
@@ -43,6 +41,11 @@ Various oasis-api functions and services can be accessed with this API such as A
   - [Solona](#solona)
     - [mint](#mint)
     - [exchange](#exchange)
+
+## Introduction
+
+This package is for client applications to connect and work with the OASIS API.<br>
+Various OASIS API functions and services can be accessed with this API such as Authentication, Karma, Avatars, Data, SEEDS, Wallets/Keys & more...
 
 ## Overview
 
