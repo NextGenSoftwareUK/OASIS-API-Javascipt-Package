@@ -39,16 +39,23 @@ Both WEB 4 & WEB 5 use machine learning AI to analyse all of the worlds data to 
 
 To summarize, WEB4 OASIS API aggregates all of the worlds data into a fully unified API to allow better sense making to made, which then feeds into WEB5 STAR, which expresses it in a cyberspace ontology and connects the worlds data to the rest of the COSMOS and Galaxy... ;-)
 
-**By building on the WEB4 OASIS API, not only can you then integrate any WEB2 or WEB3 tech into your (web)app, you are also then future prove and your app will be WEB5 ready when it is released later this year...**
+<a name="web4-oasisapi-benefits"></a>
+## Benefits Of Building On The WEB4 OASIS API:
 
-Check out the main repo for more info:<br>
-https://github.com/NextGenSoftwareUK/Our-World-OASIS-API-HoloNET-HoloUnity-And-.NET-HDK
+* **Integrate any WEB2 or WEB3 tech into your (web)app without having to learn or worry about new tech stacks/languages (the OASIS API hides all the complexity away so you can focus on creating your dream app!).**
 
-And here: <br>
-https://www.ourworldthegame.com/single-post/what-is-web4-web5-really <br>
-https://www.ourworldthegame.com/single-post/first-production-ready-release-of-web4-oasis-api-more <br>
-https://www.ourworldthegame.com/single-post/announcing-star-odk-hdk-cosmic  <br>
-https://www.ourworldthegame.com/single-post/star-odk-hdk-cosmic-oasis-api-our-world-update 
+* **No need to worry about how different blockchains or WEB2 and WEB3 can talk and integrate with each other, the OASIS handles all this for you!**
+
+* **Future prove so when any new language/tech comes out such as Ethereum2 etc, these will be automatically added to the OASIS API for FREE, you will have FREE upgrades for life!**
+
+* **WEB5 ready when it is released later this year...**
+
+Check out more info below:<br><br>
+[The Power Of The OASIS API](https://drive.google.com/file/d/1nnhGpXcprr6kota1Y85HDDKsBfJHN6sn/view?usp=sharing) <br>
+[What Is WEB4 & WEB5 Really?](https://www.ourworldthegame.com/single-post/what-is-web4-web5-really) <br>
+[First Production Release Of The WEB4 OASIS API](https://www.ourworldthegame.com/single-post/first-production-ready-release-of-web4-oasis-api-more) <br>
+[Annoucing WEB5 STAR ODK/HDK/COSMIC](https://www.ourworldthegame.com/single-post/announcing-star-odk-hdk-cosmic)  <br>
+[STAR ODK/HDK/COSMIC/OASIS API/Our World Update](https://www.ourworldthegame.com/single-post/star-odk-hdk-cosmic-oasis-api-our-world-update) 
 
 ## How To Use
 
