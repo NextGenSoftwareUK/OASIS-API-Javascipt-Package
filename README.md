@@ -1,7 +1,7 @@
 # WEB4 OASIS API Javascript Package
 
 - [OASIS API](#oasis-api)
-  - [Introduction]
+  - [Introduction](#introduction)
   - [Overview](#overview)
   - [Benefits Of Building On The WEB4 OASIS API](#web4-oasisapi-benefits)
   - [Getting started](#getting-started)
