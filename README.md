@@ -4,7 +4,7 @@
   - [Introduction](#introduction)
   - [Overview](#overview)
   - [Benefits Of Building On The WEB4 OASIS API](#web4-oasisapi-benefits)
-  - [Do You Want To Get Involved?](#do-you-want-to-get-involved?)
+  - [Do You Want To Get Involved?](#get-involved)
   - [Getting started](#getting-started)
   - [Auth](#auth)
     - [Login](#login)
@@ -102,6 +102,7 @@ Check out more info below:<br><br>
 [STAR ODK/HDK/COSMIC/OASIS API/Our World Update](https://www.ourworldthegame.com/single-post/star-odk-hdk-cosmic-oasis-api-our-world-update) <br>
 [Main WEB4 OASIS API & WEB5 STAR Repo](https://github.com/NextGenSoftwareUK/Our-World-OASIS-API-HoloNET-HoloUnity-And-.NET-HDK)
 
+<a name="get-involved"></a>
 ## Do You Want To Get Involved?
 
 We are always looking for people to jump in and get involved, you do not need to be an existing coders, we can help you with that... you just need a willingness to learn and to have an open heart, we are always more interested what is in your heart rather than your head! ;-)
