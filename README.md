@@ -4,6 +4,7 @@
   - [Introduction](#introduction)
   - [Overview](#overview)
   - [Benefits Of Building On The WEB4 OASIS API](#web4-oasisapi-benefits)
+  - [Want To Get Involved](#getinvolved)
   - [Getting started](#getting-started)
   - [Auth](#auth)
     - [Login](#login)
@@ -41,7 +42,6 @@
   - [Solona](#solona)
     - [mint](#mint)
     - [exchange](#exchange)
-  - [Want To Get Involved](#getinvolved)
 
 ## Introduction
 
@@ -101,6 +101,21 @@ Check out more info below:<br><br>
 [Annoucing WEB5 STAR ODK/HDK/COSMIC](https://www.ourworldthegame.com/single-post/announcing-star-odk-hdk-cosmic)  <br>
 [STAR ODK/HDK/COSMIC/OASIS API/Our World Update](https://www.ourworldthegame.com/single-post/star-odk-hdk-cosmic-oasis-api-our-world-update) <br>
 [Main WEB4 OASIS API & WEB5 STAR Repo](https://github.com/NextGenSoftwareUK/Our-World-OASIS-API-HoloNET-HoloUnity-And-.NET-HDK)
+
+## Do You Want To Get Involved?
+
+We are always looking for people to jump in and get involved, you do not need to be an existing coders, we can help you with that... you just need a willingness to learn and to have an open heart, we are always more interested what is in your heart rather than your head! ;-)
+
+We are looking for Web Devs (with any of these: react, angular, vue, js, html, css), Unity Devs & C# Devs.
+
+Want to make a difference in the world?
+
+What will be your legacy?
+
+Ready to be a hero?
+
+If the answer is YES, then please [proceed to here](https://github.com/NextGenSoftwareUK/Our-World-OASIS-API-HoloNET-HoloUnity-And-.NET-HDK/wiki/So-You-Want-To-Get-Involved%3F-Ready-To-Be-A-Hero%3F)...
+
 
 ## How To Use
 
@@ -515,17 +530,3 @@ const data={
       },
     }
 ```
-
-## Do You Want To Get Involved?
-
-We are always looking for people to jump in and get involved, you do not need to be an existing coders, we can help you with that... you just need a willingness to learn and to have an open heart, we are always more interested what is in your heart rather than your head! ;-)
-
-We are looking for Web Devs (with any of these: react, angular, vue, js, html, css), Unity Devs & C# Devs.
-
-Want to make a difference in the world?
-
-What will be your legacy?
-
-Ready to be a hero?
-
-If the answer is YES, then please [proceed to here](https://github.com/NextGenSoftwareUK/Our-World-OASIS-API-HoloNET-HoloUnity-And-.NET-HDK/wiki/So-You-Want-To-Get-Involved%3F-Ready-To-Be-A-Hero%3F)...
