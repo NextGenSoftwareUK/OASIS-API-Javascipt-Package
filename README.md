@@ -105,7 +105,7 @@ Check out more info below:<br><br>
 <a name="get-involved"></a>
 ## Do You Want To Get Involved?
 
-We are always looking for people to jump in and get involved, you do not need to be an existing coders, we can help you with that... you just need a willingness to learn and to have an open heart, we are always more interested what is in your heart rather than your head! ;-)
+We are always looking for people to jump in and get involved, you do not need to be an existing coder, we can help you with that... you just need a willingness to learn and to have an open heart, we are always more interested with what is in your heart rather than your head! ;-)
 
 We are looking for Web Devs (with any of these: react, angular, vue, js, html, css), Unity Devs & C# Devs.
 
