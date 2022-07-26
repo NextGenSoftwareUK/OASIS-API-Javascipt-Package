@@ -4,7 +4,7 @@
   - [Introduction](#introduction)
   - [Overview](#overview)
   - [Benefits Of Building On The WEB4 OASIS API](#web4-oasisapi-benefits)
-  - [Want To Get Involved](#getinvolved)
+  - [Want To Get Involved](#want-to-get-involved)
   - [Getting started](#getting-started)
   - [Auth](#auth)
     - [Login](#login)
