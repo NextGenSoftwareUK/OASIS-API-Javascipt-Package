@@ -49,9 +49,9 @@ This package is for client applications to connect and work with the OASIS API. 
 
 ## Overview
 
-The WEB4 OASIS API enables you to integrate your unity project with everything else such as all blockchains, holochain & much more. It also provides SSO, load balancing, auto failover, auto replication, zero downtime, zero lag, infinite players and more.
+The WEB4 OASIS API enables you to integrate your project with everything else (WEB2 & WEB3) such as all blockchains, holochain & much more. It also provides SSO, load balancing, auto failover, auto replication, zero downtime, zero lag, infinite players and much more!
 
-The WEB4 OASIS API seeks to connect anything to everything within the realms of current possibilities (including EOSIO, Ethereum, Holochain, SOLID, ActivityPub, IPFS, Telos, SEEDS, ThreeFold & many more!). It is unity consciousnes expressed within the technical sphere.
+The WEB4 OASIS API seeks to connect anything to everything within the realms of current possibilities (including EOSIO, Ethereum, Solana, Holochain, SOLID, ActivityPub, IPFS, Telos, SEEDS, ThreeFold & many more!). It is unity consciousnes expressed within the technical sphere.
 
 WEB 4 OASIS API is a fully distributed decentralised fault tolerant load balanced integrated API that runs across the full Internet acting as an abstraction layer over everything and serves as a network of networks.
 
@@ -63,7 +63,7 @@ Also, just like a team of people, different tech has various strengths and weakn
 
 One of the core design goals of the OASIS is maximum interoperability (to remove all silos and walled gardens) to the point everything merges into one (the singularity) and also to be super powerful but super easy and intuitive to use.
 
-The WEB4 OASIS API connects & Integrates everything (all of WEB 2 & WEB 3) including all blockchains, holochain, IPFS, databases, cloud etc into one fully unified API that is an abstraction layer over everything) and the STAR OASIS Omniverse (WEB 5) where Our World is the first world in the infinite Omniverse (what comes after Metaverse). It connects and integrates all metaverses together through the SSO Avatar/Karma system (part of the OASIS API). It is also a fully interoperable Metaverse Low Code Generator (connecting all WEB 2 and WEB 3 together) through the WEB 4 OASIS API.
+The WEB4 OASIS API connects & Integrates everything (all of WEB 2 & WEB 3) including all blockchains, holochain, IPFS, databases, cloud etc into one fully unified API that is an abstraction layer over everything).
 
 The whole point of the OASIS API is to allow everything to be fully interoperable so data can be shared between any provider, the architecture opens the doors for many more use cases like importing and exporting your data between providers, aggregating all your data to remove all silos so better sense making and AI machine learning can be made to analyse and to make predictions etc, smart contract interoperability, etc
 
@@ -111,13 +111,25 @@ This same technology works across all of the API's (Avatar, Data, etc) so you ca
 
 Soon you will also have a very powerful intuitive UI allowing anyone to build an OAPP through a simple intuitive to use drag n drop interface plugging together the various components (web, unity, unreal, metaverse & more) you need allowing you to focus on your ideas rather than on how to implement them. This will lower the barrier to entry for non-technical people, the perfect low-code solution!
 
-### 2D/3D/Map/Meta Visusalization
+### WEB/2D/3D/AR/VR/IR/Map/Meta Visusalization
 
-Our World also acts as the UI to the OASIS API allowing the various OAPP’s to have a 3D object/2D sprite representation on the 3D map of the world. They can then view meta data about the app as well as launch the app from within Our World (phase 1 of The OASIS you see in Ready Player One).Through the OASIS API people have a full geo-location API allowing them to fully control the 3D map, add quests, routes, sub-games, AR hotspots, and so much more. One possible use case would be Smart Cities amongst many more.
+Each OAPP can have a Web, 2D, 3D AR, 3D VR, 3D Map, 3D IR ([Infinite Reality](https://www.ourworldthegame.com/single-post/beyond-xr-is-ir-infinite-reality)), 2D Map & Meta View. You will be able to switch between these at run-time.
+
+### Our World Geo-Location/AR/IR/Map UI (Game of Games Engine)
+
+[Our World](http://www.ourworldthegame.com) is the first world in the infinite Omniverse (what comes after Metaverse). Our World also acts as the UI to the OASIS API allowing the various OAPP’s to have a 3D object/2D sprite representation on the 3D map of the world. They can then view meta data about the app as well as launch the app from within Our World (phase 1 of The OASIS you see in Ready Player One). Through the OASIS API people have a full geo-location API allowing them to fully control the 3D map, add quests, routes, sub-games, AR hotspots, and so much more. One possible use case would be Smart Cities amongst many more. 
+
+Our World is also an educational game/platform teaching people how to co-create a better world for all using the latest cutting edge technology. [Check out the site](http://www.ourworldthegame.com) for more info.
+
+### IR (Infinite Reality) Ready
+
+IR is what comes after AR, VR & XR. It is where the boundary between real and the virtual become one. More coming soon... ;-) 
 
 ### WEB 5 STAR OASIS Omniverse Interoperable Metaverse Low Code Generator
 
 [The WEB 5 STAR OASIS Omniverse Interoperable Metaverse Low Code Generator](https://github.com/NextGenSoftwareUK/Our-World-OASIS-API-HoloNET-HoloUnity-And-.NET-HDK#web5-star-odk) is built on top of the OASIS API and aggregates all the worlds data and expresses it within a cyberspace ontology using a cutting edge custom built ORM (Object Relational Mapper) called COSMIC. The STAR Omniverse is both a simulation & game of life and aggregates all metaverses into one fully integrated unified platform. It is also a fully integrated immersive interoperable metaverse Low Code Generator and soooooo much more.... ;-)
+
+It connects and integrates all metaverses together through the SSO Avatar/Karma system (part of the OASIS API). It is also a fully interoperable Metaverse Low Code Generator (connecting all WEB 2 and WEB 3 together) through the WEB 4 OASIS API.
 
 The STAR ODK, the heart of the OASIS can even compile OAPP's to native code for each platform, provider, network, etc. For example, for Holochain Provider it dynamically generates the low-level Rust code, which acts as the DAL (Data Access Layer). It also dynamically generates the C# code that runs on top of it abstracting away the lower-level complexities and this acts as the BLL (Business Logic Layer). This has the additional benefit that you can now debug your app logic in C#, something you cannot do in rust. It also allows you to have the best of both worlds by giving you access to both rust and C# libraries. The possibilities are endless, time to unleash YOUR full potential!
 
@@ -174,9 +186,15 @@ To summarize, WEB4 OASIS API aggregates all of the worlds data into a fully unif
 
 * **Agent Centric (User owns and stores own data).**
 
-* **2D/3D/Map/Meta Visusalization.**
+* **WEB/2D/3D/AR/VR/IR/Map/Meta Visusalization**
+
+* **Our World Geo-Location/AR/IR/Map UI (Game of Games Engine).**
+
+* **IR (Infinite Reality) Ready.**
 
 * **Powerful Pick n Mix & Plug n Play UI Components.**
+
+* **Smart City Ready.**
 
 * **WEB5 Omniverse/Metaverse Ready.**
 
