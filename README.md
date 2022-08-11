@@ -49,7 +49,7 @@
 
 ## Introduction
 
-This package is for client applications to connect and work with the OASIS API. Various OASIS API functions and services can be accessed with this API such as Authentication, Karma, Avatars, Data, SEEDS, Wallets/Keys & more...
+This package is for client applications to connect and work with the OASIS API.
 
 ## Overview
 
