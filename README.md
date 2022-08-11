@@ -51,9 +51,14 @@ This package is for client applications to connect and work with the OASIS API. 
 
 The WEB4 OASIS API enables you to integrate your project with everything else (WEB2 & WEB3) such as all blockchains, holochain & much more. It also provides SSO, load balancing, auto failover, auto replication, zero downtime, zero lag, infinite players and much more!
 
-The WEB4 OASIS API seeks to connect anything to everything within the realms of current possibilities (including EOSIO, Ethereum, Solana, Holochain, SOLID, ActivityPub, IPFS, Telos, SEEDS, ThreeFold & many more!). It is unity consciousnes expressed within the technical sphere.
+Various OASIS API functions and services can be accessed with this API such as Authentication, Karma, Avatars, Data, SEEDS, Wallets/Keys & more...
 
-WEB 4 OASIS API is a fully distributed decentralised fault tolerant load balanced integrated API that runs across the full Internet acting as an abstraction layer over everything and serves as a network of networks.
+This allows you to bridge between all of WEB2 & WEB3 Holochain, IPFS, MongoDB, SQLLite, Neo4j, Solana, Ethereum, EOS & ThreeFold with many more coming soon such as COSMOS, Polkadot, Polygon, SOLID, ActivityPub, Near, Nexus, HIVE, CEPTR Pluggable Protocol, Fediverse, XMPP & many more! :) The majority of these are aimed at building a truly decentralised distributed internet (Web 3.0) and this is also the aim of the OASIS API. If you wish to get involved and help build out any of these providers or any other you would like to see integrated please get in touch here: https://t.me/ourworldthegamechat. 
+
+WEB 4 OASIS API is a fully distributed decentralised fault tolerant load balanced integrated API that runs across the full Internet acting as an abstraction layer over everything and serves as a network of networks. It is unity consciousnes expressed within the technical sphere. [The OASIS API is a global universal API that aims to connect anything to everything](https://github.com/NextGenSoftwareUK/Our-World-OASIS-API-HoloNET-HoloUnity-And-.NET-HDK#the-universal-api-to-connect-everything-to-everything--no-more-silos-walled-gardens-) to eliminate walled gardens/silos.
+
+The core OASIS (Open Advanced Sensory Immersion System) API that powers Our World/One World and manages the central profile/avatar/karma system that other satellite apps/games/sites/services plug into it and share. This allows karma to be earnt in the satellite apps/games by doing good deeds or progressing self help apps for example.
+
 
 ### Best Of All Worlds
 
@@ -127,7 +132,15 @@ Each OAPP can have a Web, 2D, 3D AR, 3D VR, 3D Map, 3D IR ([Infinite Reality](ht
 
 [Our World](http://www.ourworldthegame.com) is the first world in the infinite Omniverse (what comes after Metaverse). Our World also acts as the UI to the OASIS API allowing the various OAPP’s to have a 3D object/2D sprite representation on the 3D map of the world. They can then view meta data about the app as well as launch the app from within Our World (phase 1 of The OASIS you see in Ready Player One). Through the OASIS API people have a full geo-location API allowing them to fully control the 3D map, add quests, routes, sub-games, AR hotspots, and so much more. One possible use case would be Smart Cities amongst many more. 
 
-Our World is also an educational game/platform teaching people how to co-create a better world for all using the latest cutting edge technology. [Check out the site](http://www.ourworldthegame.com) for more info.
+[Our World](https://github.com/NextGenSoftwareUK/Our-World-OASIS-API-HoloNET-HoloUnity-And-.NET-HDK#our-world-overview) is an exciting immersive next generation 3D XR/IR (Infinite Reality) educational game/platform/social network/ecosystem teaching people on how to look after themselves, each other and the planet using the latest cutting-edge technology. It teaches people the importance of real-life face to face connections with human beings and encourages them to get out into nature using Augmented Reality similar to Pokémon Go but on a much more evolved scale. This is our flagship product and is our top priority due to the massive positive impact it will make upon the world...
+
+It is the XR/IR Gamification layer of the new interplanetary operating system & the new internet (Web 3.0), which is being built by the elite technical wizards stationed around the world. This will one day replace the current tech giants such as Google, FaceBook, etc and act as the technical layer of the New Earth, which is birthing now.  Unlike the current tech giants who's only aim is to ruthlessly maximize profits at the expense of people and the planet (as well as spying, exploitation, censorship & social engineering), our technology is based on true love & unity consciousness where money and profits are not our aim or intention, our aim and intention is to heal the entire planet & human race so we can all live in harmony with each other. It is a 5th dimensional and ascension training platform, teaching people vital life lessons as well as acting as a real-time simulation of the real world.
+
+Our World is built on top of the de-centralised, distributed nextgen internet known as Holochain (but bridges to all other WEB2 & WEB3 sites/apps/games through the OASIS API).
+
+The first phase of Our World will be a de-centralised distributed XR Gamified 3D Map replacement for Google Maps along with the Avatar/Profile/Karma & OASIS API system. The satellite apps/games will be able to create their own 2D/3D object to appear on the real-time 3D map.
+
+[Check out the site](http://www.ourworldthegame.com) for more info.
 
 ### IR (Infinite Reality) Ready
 
@@ -135,7 +148,21 @@ IR is what comes after AR, VR & XR. It is where the boundary between real and th
 
 ### One World (VR) (Game Of Games Engine)
 
-One World is Our World's cousin and is a Open World MMORPG set in the past allowing people to build whatever they can imagine unleashing their FULl creativity & potential! It uses bio-feedback technology allowing you to move objects with your mind with real force powers! :) You can also see other players avatar/chakras in real-time and so much more! You can medidate to make it rain to water your crops or to help your camp fire burn brighter! More news on this soon...
+One World is Our World's cousin and is a Open World MMORPG set in the past allowing people to build whatever they can imagine unleashing their FULl creativity & potential! It uses bio-feedback technology allowing you to move objects with your mind with real force powers! :) You can also see other players avatar/chakras in real-time and so much more! You can medidate to make it rain to water your crops or to help your camp fire burn brighter! 
+
+One World will be the first AAA MMO game and 2D/3D Social Network to run on HoloChain and the Blockchain. It will also be the first to integrate a social network with a MMO game/platform as well as all of these technologies and devices together. As with the rest of the game, it will be leading the way in what can be done with this NextGen Technology for the benefit and upliftment of humanity.
+
+### XR/IR Unified Interface To The World
+
+Our World & One World are like the XR/IR Unified Interface into all of these hApps/dAps/Websites/apps/games (this is the Operating System part of it), it's a bit like the XR UI front-end to Holochain/Blockchains/WEB2 where you can view and launch any app/website/game from inside it but they integrate much more deeper than that through the OASIS API/Profile/Avatar/Karma system where they all share the central avatar/profile and can all add/subtract the profiles/avatars karma.
+
+### ARC/HoloMap/Synergy Engine Integration
+
+We will be implementing the ARC (Augmented Reality Computer) Membrane allowing the revolutionary next-gen operating system to fully interface & integrate with the 3D Map & Avatar/Karma system as well as render its own 3D interfaces and 2D HUD overlays on top of the map, etc.
+
+We will also port HoloMap (previously called Noomap) to Unity and will implement a Synergy Engine allowing people to easily find and match solutions/desires/passions and to also find various solution providers, which again will be fully integrated with the 3D Map & Avatar/Karma system.
+
+More news on this soon...
 
 Both One World (desktop/console) & Our World (smartphone) players can interact in real-time through time portals and much more...
 
@@ -211,6 +238,8 @@ To summarize, WEB4 OASIS API aggregates all of the worlds data into a fully unif
 * **Smart City Ready.**
 
 * **Bio-feedback Ready.**
+
+* **Synergy Engine Ready.**
 
 * **IR (Infinite Reality) Ready.**
 
