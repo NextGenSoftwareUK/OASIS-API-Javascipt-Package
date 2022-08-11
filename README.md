@@ -180,7 +180,7 @@ To summarize, WEB4 OASIS API aggregates all of the worlds data into a fully unif
 
 * **Maximum Interopability/Aggregation.**
 
-* **AI/Machine Learning Over All Of World's Aggregated Data.*
+* **AI/Machine Learning Over All Of World's Aggregated Data.**
 
 * **Triple Level Quantum Resistant Encryption.**
 
@@ -200,7 +200,7 @@ To summarize, WEB4 OASIS API aggregates all of the worlds data into a fully unif
 
 * **Agent Centric (User owns and stores own data).**
 
-* **WEB/2D/3D/AR/VR/IR/Map/Meta Visusalization**
+* **WEB/2D/3D/AR/VR/IR/Map/Meta Visusalization.**
 
 * **Our World Geo-Location/AR/IR/Map UI (Game of Games Engine).**
 
