@@ -57,7 +57,7 @@ WEB 4 OASIS API is a fully distributed decentralised fault tolerant load balance
 
 ### Best Of All Worlds
 
-Also, just like a team of people, different tech has various strengths and weaknesses, by integrating them together so they work as one unified co-ordinated team, you eliminate all weaknesses and then have the best of all worlds, the whole is greater than the sum of the parts. It harnesses the best of each provider so the OASIS uses the strengths of each provider to the maximum and removes all weaknesses, it automatically uses the most appropriate provider or providers for any given use case.
+Just like a team of people, different tech has various strengths and weaknesses, by integrating them together so they work as one unified co-ordinated team, you eliminate all weaknesses and then have the best of all worlds, the whole is greater than the sum of the parts. It harnesses the best of each provider so the OASIS uses the strengths of each provider to the maximum and removes all weaknesses, it automatically uses the most appropriate provider or providers for any given use case.
 
 ### Maximum Interopability/Aggregation
 
