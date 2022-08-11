@@ -152,19 +152,19 @@ One World is Our World's cousin and is a Open World MMORPG set in the past allow
 
 One World will be the first AAA MMO game and 2D/3D Social Network to run on HoloChain and the Blockchain. It will also be the first to integrate a social network with a MMO game/platform as well as all of these technologies and devices together. As with the rest of the game, it will be leading the way in what can be done with this NextGen Technology for the benefit and upliftment of humanity.
 
+More news on this soon...
+
 ### XR/IR Unified Interface To The World
 
 Our World & One World are like the XR/IR Unified Interface into all of these hApps/dAps/Websites/apps/games (this is the Operating System part of it), it's a bit like the XR UI front-end to Holochain/Blockchains/WEB2 where you can view and launch any app/website/game from inside it but they integrate much more deeper than that through the OASIS API/Profile/Avatar/Karma system where they all share the central avatar/profile and can all add/subtract the profiles/avatars karma.
+
+Both One World (desktop/console) & Our World (smartphone) players can interact in real-time through time portals and much more...
 
 ### ARC/HoloMap/Synergy Engine Integration
 
 We will be implementing the ARC (Augmented Reality Computer) Membrane allowing the revolutionary next-gen operating system to fully interface & integrate with the 3D Map & Avatar/Karma system as well as render its own 3D interfaces and 2D HUD overlays on top of the map, etc.
 
 We will also port HoloMap (previously called Noomap) to Unity and will implement a Synergy Engine allowing people to easily find and match solutions/desires/passions and to also find various solution providers, which again will be fully integrated with the 3D Map & Avatar/Karma system.
-
-More news on this soon...
-
-Both One World (desktop/console) & Our World (smartphone) players can interact in real-time through time portals and much more...
 
 ### WEB 5 STAR OASIS Omniverse Interoperable Metaverse Low Code Generator
 
