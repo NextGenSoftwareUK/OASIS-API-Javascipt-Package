@@ -63,21 +63,25 @@ Just like a team of people, different tech has various strengths and weaknesses,
 
 One of the core design goals of the OASIS is maximum interoperability (to remove all silos and walled gardens) to the point everything merges into one (the singularity) and also to be super powerful but super easy and intuitive to use.
 
-The WEB4 OASIS API connects & Integrates everything (all of WEB 2 & WEB 3) including all blockchains, holochain, IPFS, databases, cloud etc into one fully unified API that is an abstraction layer over everything).
+The WEB4 OASIS API connects & Integrates everything (all of WEB 2 & WEB 3) including all blockchains, holochain, IPFS, databases, cloud etc into one fully unified API that is an abstraction layer over everything.
 
-The whole point of the OASIS API is to allow everything to be fully interoperable so data can be shared between any provider, the architecture opens the doors for many more use cases like importing and exporting your data between providers, aggregating all your data to remove all silos so better sense making and AI machine learning can be made to analyse and to make predictions etc, smart contract interoperability, etc
+The whole point of the OASIS API is to allow everything to be fully interoperable so data can be shared between any provider, the architecture opens the doors for many more use cases like importing and exporting your data between providers, aggregating all your data to remove all silos so better sense making and AI machine learning can be made to analyse and to make predictions, smart contract interoperability, etc
 
 ### Full Redundancy/Zero Downtime
 
-It also allows full data redundancy and for it to be network independent so if one network goes down it can automatically switch to the next fastest node in your area regardless of what network it is on...
+It also allows full data redundancy and for it to be network independent so if one network goes down it can automatically switch to the next fastest node in your area regardless of what network it is on.
 
 ### Avatar API
 
-The OASIS API features a powerful Avatar SSO (Single Sign On) API allowing one login across all your sites, games, apps, services, etc across all devices and platforms for your OASIS Avatar where you have FULL control of ALL of your data right down to the individual field level and whether each field is Replicated/Shared (ReadOnly) or Shared (ReadWrite). You no longer need to remember multiple login details, you can have just one login (avatar), that follows you everywhere and you have FULL control of. You choose where your data is stored and who has access to it.This avatar is the digital twin of YOU and allows you to earn/lose karma through the Karma API. 
+The OASIS API features a powerful Avatar SSO (Single Sign On) API allowing ONE login across all your sites, games, apps, services, etc across all devices and platforms for your OASIS Avatar where you have FULL control of ALL of your data right down to the individual field level and whether each field is Replicated/Shared (ReadOnly) or Shared (ReadWrite). You no longer need to remember multiple login details, you can have just ONE login (avatar), that follows you everywhere and you have FULL control of. You choose where your data is stored and who has access to it. This avatar is the digital twin of YOU and allows you to earn/lose karma through the Karma API. 
 
 ### Karma API
 
-The OASIS API also has a powerful Karma API where your avatar (YOU) can earn and lose karma across any OAPP (OASIS App) that is integrated into the OASIS API (websites, apps, games, services, etc). You can earn karma for picking up litter, recycling, going green, helping people, heating/drinking healthily, improving your self or the enviroment, donating to chairty, volunteering for good causes, planting trees, progressing in self help apps, medidation, yoga, mindfulness, spending time in nature, etc. You lose karma for dropping liter, being abusive online, not eating healthily. This karma is then redeemed for real world goods & services such as a free smoothie, yoga class, etc. It also unlocks new gifts and super powers for your avatar in the Our World/One World games that plug into the API, they are the first worlds of the new upcoming OASIS Omniverse (network of metaverses).
+The OASIS API also has a powerful Karma API where your avatar (YOU) can earn and lose karma across any OAPP (OASIS App) that is integrated into the OASIS API (websites, apps, games, services, etc). You can earn karma for picking up litter, recycling, going green, helping people, eating/drinking healthily, improving your self or the enviroment, donating to chairty, volunteering for good causes, planting trees, progressing in self help apps, medidation, yoga, mindfulness, spending time in nature, etc. You lose karma for dropping liter, being abusive online, not eating healthily. 
+
+This karma is then redeemed for real world goods & services such as for a free smoothie, yoga class, retreat etc. 
+
+It also unlocks new gifts and super powers for your avatar in the Our World/One World games that plug into the API, they are the first worlds of the new upcoming OASIS Omniverse (network of metaverses).
 
 ### Full Accountability/Zero Crime/Dark Net Prove
 
@@ -85,19 +89,23 @@ The extra benefit of this is that everyone is fully accountable for their action
 
 ### Data API
 
-It also features the Data API allowing data to be shared between the above providers giving full interoperability. It also has powerful features such as auto-fail over, auto-load balancing and auto-replication across the providers so if one node goes down in your local area it will automatically switch to the next fastest node in your area independent of the network it belongs to, this way the OASIS API never has any downtime and will always be super fast and not reliant on only one network. This also applies for all the other API's such as the Avatar API etc. With unity consciousness the possibilities are limitless!
+It also features the powerful [Data API](https://www.ourworldthegame.com/single-post/web4-oasis-api-v2-3-1-released-with-new-improved-data-api-and-lots-more) allowing data to be shared between the above providers giving full interoperability. It also has powerful features such as auto-fail over, auto-load balancing and auto-replication across the providers so if one node goes down in your local area it will automatically switch to the next fastest node in your area independent of the network it belongs to, this way the OASIS API never has any downtime and will always be super fast and not reliant on only one network. This also applies for all the other API's such as the Avatar API etc. With unity consciousness the possibilities are limitless!
 
 ### Future Prove! Never Need To Learn A New Tech Stack/Language Again!
 
-The OASIS API is very intuitive and easy to use hiding away the complexities of the lower-level networks/protocols/platforms/API's but at the same time gives full power and control to power users who wish to dive deeper into the lower-level tech. This also means you do not need to keep learning new tech/APIs/programming languages etc, from now on you only ever need to use the very intuitive powerful OASIS API and the rest is taken care of for you! Also, even if a newer version of one network/API comes out like Holochain RSM or Ethereum 2, you do not need to do anything to port your app to the latest version, the OASIS will take care of this for you.
+The OASIS API is very intuitive and easy to use hiding away the complexities of the lower-level networks/protocols/platforms/API's but at the same time gives full power and control to power users who wish to dive deeper into the lower-level tech. This also means you do not need to keep learning new tech/APIs/programming languages etc, from now on you only ever need to use the very intuitive powerful OASIS API and the rest is taken care of for you! Also, even if a newer version of one network/API comes out like Holochain RSM or Ethereum 2, you do not need to do anything to port your app to the latest version, the OASIS will take care of this for you. This saves you valuable time to focus on bringing your idea to life! Happy Days! :)
 
 ### SEEDS API
 
-The OASIS API also has a SEEDS API allowing people to earn karma for donating and paying with Seeds as well as when they invite or join Seeds. Read more here: https://joinseeds.earth/
+The OASIS API also has a SEEDS API allowing people to earn karma for donating and paying with Seeds (a new currency based on re-generating the planet) as well as when they invite or join Seeds. Read more here: https://joinseeds.earth/
 
 ### Keys/Wallet API
 
-Finally it also features a Keys/Wallets API, which allows public private keys to be linked to your avatar per provider and private keys are only stored locally. Public keys and the rest of the wallet are stored on any provider. Because of the auto replication the private keys are automatically backed up to your local devices and can automatically sync between them so if you get a new device it can automatically sync with it, a bit like a decentralised offline cloud.
+Finally it also features a new powerful Keys/Wallets API, which allows public private keys to be linked to your avatar per provider and private keys are only stored locally. Public keys and the rest of the wallet are stored on any provider (and auto-replicated across providers). Using the Avatar SSO you can also login using any of your public keys linked to your avatar (as well as either your username or email). You can also transfer tokens using any of these 3 so you do not need to ever worry about long meaningless public keys!
+
+All of your wallets, bank accounts, PayPal, etc can be linked to your aggregated OASIS Wallet so you can see your full balance of assets and easily transfer between ANY of them with just one cick, gone are the days of having to painfully manage and transfer between mutiple wallets just to get access to your funds!
+
+Because of the auto replication the private keys are automatically backed up to your local devices and can automatically sync between them so if you get a new device it can automatically sync with it, a bit like a decentralised offline cloud.
 
 You will never lose your keys again! ;-)
 
@@ -115,7 +123,7 @@ Soon you will also have a very powerful intuitive UI allowing anyone to build an
 
 Each OAPP can have a Web, 2D, 3D AR, 3D VR, 3D Map, 3D IR ([Infinite Reality](https://www.ourworldthegame.com/single-post/beyond-xr-is-ir-infinite-reality)), 2D Map & Meta View. You will be able to switch between these at run-time.
 
-### Our World Geo-Location/AR/IR/Map UI (Game of Games Engine)
+### Our World Geo-Location/AR/IR/Map UI (Game Of Games Engine)
 
 [Our World](http://www.ourworldthegame.com) is the first world in the infinite Omniverse (what comes after Metaverse). Our World also acts as the UI to the OASIS API allowing the various OAPP’s to have a 3D object/2D sprite representation on the 3D map of the world. They can then view meta data about the app as well as launch the app from within Our World (phase 1 of The OASIS you see in Ready Player One). Through the OASIS API people have a full geo-location API allowing them to fully control the 3D map, add quests, routes, sub-games, AR hotspots, and so much more. One possible use case would be Smart Cities amongst many more. 
 
@@ -124,6 +132,12 @@ Our World is also an educational game/platform teaching people how to co-create 
 ### IR (Infinite Reality) Ready
 
 IR is what comes after AR, VR & XR. It is where the boundary between real and the virtual become one. More coming soon... ;-) 
+
+### One World (VR) (Game Of Games Engine)
+
+One World is Our World's cousin and is a Open World MMORPG set in the past allowing people to build whatever they can imagine unleashing their FULl creativity & potential! It uses bio-feedback technology allowing you to move objects with your mind with real force powers! :) You can also see other players avatar/chakras in real-time and so much more! You can medidate to make it rain to water your crops or to help your camp fire burn brighter! More news on this soon...
+
+Both One World (desktop/console) & Our World (smartphone) players can interact in real-time through time portals and much more...
 
 ### WEB 5 STAR OASIS Omniverse Interoperable Metaverse Low Code Generator
 
@@ -190,11 +204,15 @@ To summarize, WEB4 OASIS API aggregates all of the worlds data into a fully unif
 
 * **Our World Geo-Location/AR/IR/Map UI (Game of Games Engine).**
 
-* **IR (Infinite Reality) Ready.**
+* **One World VR (Game of Games Engine) UI.**
 
 * **Powerful Pick n Mix & Plug n Play UI Components.**
 
 * **Smart City Ready.**
+
+* **Bio-feedback Ready.**
+
+* **IR (Infinite Reality) Ready.**
 
 * **WEB5 Omniverse/Metaverse Ready.**
 
