@@ -4,6 +4,10 @@
   - [Introduction](#introduction)
   - [Overview](#overview)
   - [Benefits Of Building On The WEB4 OASIS API](#web4-oasisapi-benefits)
+  - [WEB4 OASIS API Packages](#web4-oasisapi-packages)
+    * [Javascript](#javascript)
+    * [Unity](#unity)
+    * [C#](#csharp)
   - [Do You Want To Get Involved?](#get-involved)
   - [Getting started](#getting-started)
   - [Auth](#auth)
@@ -257,6 +261,23 @@ Check out more info below:<br><br>
 [Annoucing WEB5 STAR ODK/HDK/COSMIC](https://www.ourworldthegame.com/single-post/announcing-star-odk-hdk-cosmic)  <br>
 [STAR ODK/HDK/COSMIC/OASIS API/Our World Update](https://www.ourworldthegame.com/single-post/star-odk-hdk-cosmic-oasis-api-our-world-update) <br>
 [Main WEB4 OASIS API & WEB5 STAR Repo](https://github.com/NextGenSoftwareUK/Our-World-OASIS-API-HoloNET-HoloUnity-And-.NET-HDK)
+
+<a name="web4-oasisapi-packages"></a>
+## WEB 4 OASIS API Packages
+
+### Javascript
+https://www.npmjs.com/package/oasis-api
+https://github.com/NextGenSoftwareUK/OASIS-API-Javascipt-Package
+
+### Unity
+
+https://github.com/NextGenSoftwareUK/OASIS-API-Unity-Package
+
+<a name="csharp"></a>
+### C#
+
+https://github.com/NextGenSoftwareUK/Our-World-OASIS-API-HoloNET-HoloUnity-And-.NET-HDK
+
 
 <a name="get-involved"></a>
 ## Do You Want To Get Involved?
