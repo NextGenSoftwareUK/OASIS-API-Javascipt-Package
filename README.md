@@ -49,39 +49,48 @@ This package is for client applications to connect and work with the OASIS API. 
 
 ## Overview
 
-WEB4 OASIS API Javascript Package allowing peeps to build and integrate the OASIS API into any web application using Javascript. 
+The WEB4 OASIS API enables you to integrate your unity project with everything else such as all blockchains, holochain & much more. It also provides SSO, load balancing, auto failover, auto replication, zero downtime, zero lag, infinite players and more.
 
-This allows you to bridge between all of WEB2 & WEB3 including Holochain, IPFS, MongoDB, SQLLite, Neo4j, Solana, Ethereum, EOS & ThreeFold with many more coming soon such as COSMOS, Polkadot, Polygon, SOLID, ActivityPub, Near & many more! :)
+The WEB4 OASIS API seeks to connect anything to everything within the realms of current possibilities (including EOSIO, Ethereum, Holochain, SOLID, ActivityPub, IPFS, Telos, SEEDS, ThreeFold & many more!). It is unity consciousnes expressed within the technical sphere.
 
 WEB 4 OASIS API is a fully distributed decentralised fault tolerant load balanced integrated API that runs across the full Internet acting as an abstraction layer over everything and serves as a network of networks.
 
 One of the core design goals of the OASIS is maximum interoperability (to remove all silos and walled gardens) to the point everything merges into one (the singularity) and also to be super powerful but super easy and intuitive to use.
 
-It also harnesses the best of each provider so the OASIS uses the strengths of each provider to the maximum and removes all weaknesses, it automatically uses the most appropriate provider or providers for any given use case.
+Also, just like a team of people, different tech has various strengths and weaknesses, by integrating them together so they work as one unified co-ordinated team, you eliminate all weaknesses and then have the best of all worlds, the whole is greater than the sum of the parts. It harnesses the best of each provider so the OASIS uses the strengths of each provider to the maximum and removes all weaknesses, it automatically uses the most appropriate provider or providers for any given use case.
 
-The WEB4 OASIS API connects & Integrates everything (all of Web 2 & Web 3) including all blockchains,  holochain, ipfs, databases, cloud etc into one fully unified API that is an abstraction layer over everything) and the STAR OASIS Omniverse (WEB 5) where Our World is the first world in the infinite Omniverse (what comes after Metaverse). It connects and integrates all metaverses together through the SSO Avatar/Karma system (part of the OASIS API). It is also a fully interoperable Metaverse Low Code Generator (connecting all WEB 2 and WEB 3 together) through the WEB 4 OASIS API.
+The WEB4 OASIS API connects & Integrates everything (all of WEB 2 & WEB 3) including all blockchains, holochain, IPFS, databases, cloud etc into one fully unified API that is an abstraction layer over everything) and the STAR OASIS Omniverse (WEB 5) where Our World is the first world in the infinite Omniverse (what comes after Metaverse). It connects and integrates all metaverses together through the SSO Avatar/Karma system (part of the OASIS API). It is also a fully interoperable Metaverse Low Code Generator (connecting all WEB 2 and WEB 3 together) through the WEB 4 OASIS API.
 
-The OASIS API features a powerful Avatar SSO API allowing one login across all your sites, games, apps, services, etc. This avatar is the digital twin of YOU and allows you to earn/lose karma through the Karma API. 
+The OASIS API features a powerful Avatar SSO (Single Sign On) API allowing one login across all your sites, games, apps, services, etc across all devices and platforms for your OASIS Avatar where you have FULL control of ALL of your data right down to the individual field level and whether each field is Replicated/Shared (ReadOnly) or Shared (ReadWrite). You no longer need to remember multiple login details, you can have just one login (avatar), that follows you everywhere and you have FULL control of. You choose where your data is stored and who has access to it.This avatar is the digital twin of YOU and allows you to earn/lose karma through the Karma API. 
 
-It also features the Data API allowing data to be shared between the above providers giving for interoperability. It also has powerful features such as auto-fail over, auto-load balancing and auto-replication across the providers so if one node goes down in your local area it will automatically switch to the next fastest node in your area independent of the network it belongs to, this way the OASIS API never has any downtime and will always be super fast and not reliant on only one network.
+It also features the Data API allowing data to be shared between the above providers giving full interoperability. It also has powerful features such as auto-fail over, auto-load balancing and auto-replication across the providers so if one node goes down in your local area it will automatically switch to the next fastest node in your area independent of the network it belongs to, this way the OASIS API never has any downtime and will always be super fast and not reliant on only one network. This also applies for all the other API's such as the Avatar API etc. With unity consciousness the possibilities are limitless!
+
+The OASIS API is very intuitive and easy to use hiding away the complexities of the lower-level networks/protocols/platforms/API's but at the same time gives full power and control to power users who wish to dive deeper into the lower-level tech. This also means you do not need to keep learning new tech/APIs/programming languages etc, from now on you only ever need to use the very intuitive powerful OASIS API and the rest is taken care of for you! Also, even if a newer version of one network/API comes out like Holochain RSM or Ethereum 2, you do not need to do anything to port your app to the latest version, the OASIS will take care of this for you.
 
 The OASIS API also has a SEEDS API allowing people to earn karma for donating and paying with Seeds as well as when they invite or join Seeds. Read more here: https://joinseeds.earth/
 
-Finally it also features a Keys/Wallets API, which allows public private keys to be linked to your avatar per provider and private keys are only stored locally. Public keys and the rest of the wallet are stored on any provider. Because of the auto replication the private keys are automatically backed up to your local devices and can automatically sync between them so if you get a new device it can automatically sync with it, a bit like a decentralised offline cloud. 
+Finally it also features a Keys/Wallets API, which allows public private keys to be linked to your avatar per provider and private keys are only stored locally. Public keys and the rest of the wallet are stored on any provider. Because of the auto replication the private keys are automatically backed up to your local devices and can automatically sync between them so if you get a new device it can automatically sync with it, a bit like a decentralised offline cloud.
 
 You will never lose your keys again! ;-)
 
-It can also then sync your public key and wallet address etc when you go back online. With this architecture it opens the doors to many new use cases... 
+It can also then sync your public key and wallet address etc when you go back online. With this architecture it opens the doors to many new use cases...
 
 The whole point of the OASIS API is to allow everything to be fully interoperable so data can be shared between any provider, the architecture opens the doors for many more use cases like importing and exporting your data between providers, aggregating all your data to remove all silos so better sense making and AI machine learning can be made to analyse and to make predictions etc, smart contract interoperability, etc
 
 It also allows full data redundancy and for it to be network independent so if one network goes down it can automatically switch to the next fastest node in your area regardless of what network it is on...
 
-[WEB 5 OASIS STAR OMNIVERSE](https://github.com/NextGenSoftwareUK/Our-World-OASIS-API-HoloNET-HoloUnity-And-.NET-HDK#web5-star-odk) is built on top of the OASIS API and aggregates all the worlds data and expresses it within a cyberspace ontology using a cutting edge custom built ORM (Object Relational Mapper) called COSMIC. The STAR Omniverse is both a simulation & game of life and aggregates all metaverses into one fully integrated unified platform. It is also a fully integrated immersive interoperable metaverse Low Code Generator and soooooo much more.... ;-)
+WEB 5 OASIS STAR OMNIVERSE is built on top of the OASIS API and aggregates all the worlds data and expresses it within a cyberspace ontology using a cutting edge custom built ORM (Object Relational Mapper) called COSMIC. The STAR Omniverse is both a simulation & game of life and aggregates all metaverses into one fully integrated unified platform. It is also a fully integrated immersive interoperable metaverse Low Code Generator and soooooo much more.... ;-)
+
+The STAR ODK, the heart of the OASIS can even compile OAPP's to native code for each platform, provider, network, etc. For example, for Holochain Provider it dynamically generates the low-level Rust code, which acts as the DAL (Data
+Access Layer). It also dynamically generates the C# code that runs on top of it abstracting away the lower-level complexities and this acts as the BLL (Business Logic Layer). This has the additional benefit that you can now debug your app logic in C#, something you cannot do in rust. It also allows you to have the best of both worlds by giving you access to both rust and C# libraries. The possibilities are endless, time to unleash YOUR full potential!
 
 Both WEB 4 & WEB 5 use machine learning AI to analyse all of the worlds data to generate useful insights, predictions & so much more!
 
 To summarize, WEB4 OASIS API aggregates all of the worlds data into a fully unified API to allow better sense making to made, which then feeds into WEB5 STAR, which expresses it in a cyberspace ontology and connects the worlds data to the rest of the COSMOS and Galaxy... ;-)
+
+Soon you will also have a very powerful intuitive UI allowing anyone to build an OAPP through a simple intuitive to use drag n drop interface plugging together the various components you need allowing you to focus on your ideas rather than on how to implement them. This will lower the barrier to entry for non-technical people, the perfect low-code solution!
+
+Our World also acts as the UI to the OASIS API allowing the various OAPP’s to have a 3D object/2D sprite representation on the 3D map of the world. They can then view meta data about the app as well as launch the app from within Our World (phase 1 of The OASIS you see in Ready Player One).Through the OASIS API people have a full geo-location API allowing them to fully control the 3D map, add quests, routes, sub-games, AR hotspots, and so much more. One possible use case would be Smart Cities amongst many more.
 
 <a name="web4-oasisapi-benefits"></a>
 ## Benefits Of Building On The WEB4 OASIS API:
@@ -92,7 +101,31 @@ To summarize, WEB4 OASIS API aggregates all of the worlds data into a fully unif
 
 * **Future prove so when any new language/tech comes out such as Ethereum2 etc, these will be automatically added to the OASIS API for FREE, you will have FREE upgrades for life!**
 
-* **WEB5 ready when it is released later this year...**
+* **SSO Avatar**
+
+* **Maximum integration & interoprability.**
+
+* **Auto load-balancing.**
+
+* **Auto fail-over.**
+
+* **Auto replication.**
+
+* **Zero downtime.**
+
+* **Zero lag.**
+
+* **Infinite players online at same time.**
+
+* **Decentralised Distributed Networking/**
+
+* **Can work off-line (will automatically sync once online again).**
+
+* **Agent Centric (User owns and stores own data).**
+
+* **WEB5 Omniverse/Metaverse Ready.**
+
+* **Plus much more!**
 
 Check out more info below:<br><br>
 [The Power Of The OASIS API](https://drive.google.com/file/d/1nnhGpXcprr6kota1Y85HDDKsBfJHN6sn/view?usp=sharing) <br>
