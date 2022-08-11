@@ -142,6 +142,9 @@ The first phase of Our World will be a de-centralised distributed XR Gamified 3D
 
 [Check out the site](http://www.ourworldthegame.com) for more info.
 
+Read another more refined (and updated) summary on the github repo code base for the Our World Smartphone AR Prototype:<br>
+https://github.com/NextGenSoftwareUK/Our-World-Smartphone-Prototype-AR
+
 ### IR (Infinite Reality) Ready
 
 IR is what comes after AR, VR & XR. It is where the boundary between real and the virtual become one. More coming soon... ;-) 
