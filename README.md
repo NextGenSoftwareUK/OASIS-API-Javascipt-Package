@@ -2,7 +2,7 @@
 
 - [OASIS API](#oasis-api)
   - [Introduction](#introduction)
- - [Overview](#overview)
+  - [Overview](#overview)
     * [Best Of All Worlds](#best-of-all-worlds)
     * [Maximum Interopability/Aggregation](#maximum-interopabilityaggregation)
     * [Full Redundancy/Zero Downtime](#full-redundancyzero-downtime)
