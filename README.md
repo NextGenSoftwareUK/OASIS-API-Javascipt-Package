@@ -23,7 +23,7 @@
     * [WEB/2D/3D/AR/VR/IR/Map/Meta Visusalization](#web2d3darvrirmapmeta-visusalization)
     * [Our World Geo-Location/AR/IR/Map UI (Game Of Games Engine)](#our-world-geo-locationarirmap-ui-game-of-games-engine)
     * [IR (Infinite Reality) Ready](#ir-infinite-reality-ready)
-    * [One World Open World MMO (VR) (Game Of Games Engine)](#one-world-vr-game-of-games-engine)
+    * [One World Open World MMO (VR) (Game Of Games Engine)](#one-world-open-world-mmo-vr-game-of-games-engine)
     * [XR/IR Unified Interface To The World](#xrir-unified-interface-to-the-world)
     * [ARC/HoloMap/Synergy Engine Integration](#archolomapsynergy-engine-integration)
     * [WEB 5 STAR OASIS Omniverse Interoperable Metaverse Low Code Generator](#web-5-star-oasis-omniverse-interoperable-metaverse-low-code-generator)
