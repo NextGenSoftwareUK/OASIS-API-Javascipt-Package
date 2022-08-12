@@ -211,7 +211,7 @@ https://github.com/NextGenSoftwareUK/Our-World-Smartphone-Prototype-AR
 
 IR is what comes after AR, VR & XR. It is where the boundary between real and the virtual become one. More coming soon... ;-) 
 
-### One World Open World MMO (Game Of Games Engine)
+### One World Open World MMO (VR) (Game Of Games Engine)
 
 One World is Our World's cousin and is a Open World MMORPG set in the past allowing people to build whatever they can imagine unleashing their FULl creativity & potential! It uses bio-feedback technology allowing you to move objects with your mind with real force powers! :) You can also see other players avatar/chakras in real-time and so much more! You can medidate to make it rain to water your crops or to help your camp fire burn brighter! 
 
