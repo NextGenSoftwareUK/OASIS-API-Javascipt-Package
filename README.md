@@ -5,7 +5,10 @@
   - [Overview](#overview)
     * [Best Of All Worlds](#best-of-all-worlds)
     * [Maximum Interopability/Aggregation](#maximum-interopabilityaggregation)
-    * [Full Redundancy/Zero Downtime](#full-redundancyzero-downtime)
+    * [HOT Swappable Plugin Architecture](#hot-swappable-plugin-architecture)
+    * [Full Redundancy/Zero Downtime/Impossible To Shutdown!](#full-redundancyzero-downtimeimpossible-to-shutdown)
+    * [HTTP REST/gRPC/GraphQL/CLI/Native Endpoints](#http-restgrpcgraphqlclinative-endpoints)
+    * [Javascript, Unity & C# Packages](#javascript-unity--c-packages)
     * [Avatar API](#avatar-api)
     * [Karma API](#karma-api)
     * [Full Accountability/Zero Crime/Dark Net Prove](#full-accountabilityzero-crimedark-net-prove)
@@ -14,6 +17,8 @@
     * [SEEDS API](#seeds-api)
     * [Keys/Wallet API](#keyswallet-api)
     * [Works Offline/Local Networks (LAN, Bluetooth, Mesh Networks)](#works-offlinelocal-networks-lan-bluetooth-mesh-networks)
+    * [One API To Rule Them All - The GOD Protocol/API](#one-api-to-rule-them-all---the-god-protocolapi)
+    * [Full Smart Contract Interoperability](#full-smart-contract-interoperability)
     * [Powerful Pick n Mix & Plug n Play UI Components](#powerful-pick-n-mix--plug-n-play-ui-components)
     * [WEB/2D/3D/AR/VR/IR/Map/Meta Visusalization](#web2d3darvrirmapmeta-visusalization)
     * [Our World Geo-Location/AR/IR/Map UI (Game Of Games Engine)](#our-world-geo-locationarirmap-ui-game-of-games-engine)
@@ -72,13 +77,14 @@
 
 This package is for client applications to connect and work with the OASIS API.
 
+
 ## Overview
 
 The WEB4 OASIS API enables you to integrate your project with everything else (WEB2 & WEB3) such as all blockchains, holochain & much more. It also provides SSO, load balancing, auto failover, auto replication, zero downtime, zero lag, infinite players and much more!
 
 Various OASIS API functions and services can be accessed with this API such as Authentication, Karma, Avatars, Data, SEEDS, Wallets/Keys & more...
 
-https://api.oasisplatform.world
+http://api.oasisplatform.world
 
 This allows you to bridge between all of WEB2 & WEB3 Holochain, IPFS, MongoDB, SQLLite, Neo4j, Solana, Ethereum, EOS & ThreeFold with many more coming soon such as COSMOS, Polkadot, Polygon, SOLID, ActivityPub, Near, Nexus, HIVE, CEPTR Pluggable Protocol, Fediverse, XMPP & many more! :) The majority of these are aimed at building a truly decentralised distributed internet (Web 3.0) and this is also the aim of the OASIS API. If you wish to get involved and help build out any of these providers or any other you would like to see integrated please get in touch here: https://t.me/ourworldthegamechat. 
 
@@ -99,9 +105,24 @@ The WEB4 OASIS API connects & Integrates everything (all of WEB 2 & WEB 3) inclu
 
 The whole point of the OASIS API is to allow everything to be fully interoperable so data can be shared between any provider, the architecture opens the doors for many more use cases like importing and exporting your data between providers, aggregating all your data to remove all silos so better sense making and AI machine learning can be made to analyse and to make predictions, smart contract interoperability, etc
 
-### Full Redundancy/Zero Downtime
 
-It also allows full data redundancy and for it to be network independent so if one network goes down it can automatically switch to the next fastest node in your area regardless of what network it is on.
+### HOT Swappable Plugin Architecture
+
+The OASIS API features a HOT Swappable Plugin Architecture meaning any OASIS Provider can be deployed and used at runtime without having to re-compile or deploy a ONODE (OASIS Node). 
+
+
+### Full Redundancy/Zero Downtime/Impossible To Shutdown!
+
+It also allows full data redundancy and for it to be network independent so if one network goes down it can automatically switch to the next fastest node in your area regardless of what network it is on. So it will be impossible to shut the OASIS down, you need to shut the entire Internet down, goodluck with that! ;-)
+
+
+### HTTP REST/gRPC/GraphQL/CLI/Native Endpoints
+
+The OASIS API currently has a HTTP REST API, CLI & Native endpoints. gRPC & GraphQL are coming soon...
+
+### Javascript, Unity & C# Packages
+
+The OASIS API currently has a [Javascript](#javascript), [Unity](#unity) & [C#](#csharp) package, more are coming soon...
 
 ### Avatar API
 
@@ -146,6 +167,20 @@ It can also then sync your public key and wallet address etc when you go back on
 ### Works Offline/Local Networks (LAN, Bluetooth, Mesh Networks)
 
 This same technology works across all of the API's (Avatar, Data, etc) so you can work offline if your connection to the internet goes down and will automatically sync once it goes back online. It even allows you to network over LAN, Bluetooth, Mesh Networks, etc.
+
+### OAPPS - Write Once, Deploy Everywhere
+OAPP's (OASIS Apps) that use the OASIS API can be deployed anywhere across any network, platform, API or protocol. This includes all of WEB2 (clouds, databases, etc),  Holochain, every popular blockchain, ActivityPub, IPFS, SOLID & many more... check the growing list of providers supported below.
+
+Gone are the days of having to write multiple dApps and having to spend lots of time setting up your dev environment for each one such as the network, wallet, account, etc. The OASIS API can manage all of this for you with one simple to use UI (web, desktop and Unity versions planned). The Unity UI will in fact be Our World and will be the most feature rich through the XR interface.
+
+You can also of course fully manage every feature and option through the API itself so you could even write your own UI to it if you so wished.
+
+### One API To Rule Them All - The GOD Protocol/API
+The OASIS API will allow you to connect into everything including e-commerce, trading, security, social networks, blockchains, holochain networks, etc. regardless of where they are running (WEB2 or WEB3/IoT).
+
+### Full Smart Contract Interoperability
+
+Smart Contracts will be supported across any of the supported providers (network/platform/API/protocol), so you only need to write the contract once for your OAPP and then deploy your OAPP once and it will then take care of deploying and running your app/smart contract across all supported providers (network/platform/API/protocol).
 
 ### Powerful Pick n Mix & Plug n Play UI Components
 
@@ -237,13 +272,25 @@ To summarize, WEB4 OASIS API aggregates all of the worlds data into a fully unif
 
 * **Maximum Interopability/Aggregation.**
 
+* **HOT Swapable PlugIn Architecture.**
+
+* **HTTP REST/gRPC/GraphQL/CLI/Native Endpoints.**
+
+* **Javascript, Unity & C# Packages - More Coming...**
+
+* **Write Once, Deploy Everywhere Now & Forever.**
+
+* **One API To Rule Them All - The GOD Protocol/API.**
+
+* **Full Smart Contract Interoperability.**
+
 * **AI/Machine Learning Over All Of World's Aggregated Data.**
 
 * **Triple Level Quantum Resistant Encryption.**
 
 * **Intelligent Key Management/Backups/Redundancy (never lose your keys again!).**
 
-* **Full Redundancy/Zero Downtime.**
+* **Full Redundancy/Zero Downtime/Impossible To Shutdown!**
 
 * **Zero Lag.**
 
