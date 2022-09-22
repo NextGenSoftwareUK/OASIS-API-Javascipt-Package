@@ -1,40 +1,42 @@
 # WEB4 OASIS API Javascript Package
 
-- [OASIS API](#oasis-api)
+- [WEB4 OASIS API Javascript Package](#web4-oasis-api-javascript-package)
   - [Introduction](#introduction)
   - [Overview](#overview)
-    * [Best Of All Worlds](#best-of-all-worlds)
-    * [Maximum Interopability/Aggregation](#maximum-interopabilityaggregation)
-    * [HOT Swappable Plugin Architecture](#hot-swappable-plugin-architecture)
-    * [Full Redundancy/Zero Downtime/Impossible To Shutdown!](#full-redundancyzero-downtimeimpossible-to-shutdown)
-    * [HTTP REST/gRPC/GraphQL/CLI/Native Endpoints](#http-restgrpcgraphqlclinative-endpoints)
-    * [Javascript, Unity & C# Packages](#javascript-unity--c-packages)
-    * [Avatar API](#avatar-api)
-    * [Karma API](#karma-api)
-    * [Full Accountability/Zero Crime/Dark Net Prove](#full-accountabilityzero-crimedark-net-prove)
-    * [Data API](#data-api)
-    * [Future Prove! Never Need To Learn A New Tech Stack/Language Again!](#future-prove-never-need-to-learn-a-new-tech-stacklanguage-again)
-    * [SEEDS API](#seeds-api)
-    * [Keys/Wallet API](#keyswallet-api)
-    * [Works Offline/Local Networks (LAN, Bluetooth, Mesh Networks)](#works-offlinelocal-networks-lan-bluetooth-mesh-networks)
-    * [One API To Rule Them All - The GOD Protocol/API](#one-api-to-rule-them-all---the-god-protocolapi)
-    * [Full Smart Contract Interoperability](#full-smart-contract-interoperability)
-    * [Powerful Pick n Mix & Plug n Play UI Components](#powerful-pick-n-mix--plug-n-play-ui-components)
-    * [WEB/2D/3D/AR/VR/IR/Map/Meta Visusalization](#web2d3darvrirmapmeta-visusalization)
-    * [Our World Geo-Location/AR/IR/Map UI (Game Of Games Engine)](#our-world-geo-locationarirmap-ui-game-of-games-engine)
-    * [IR (Infinite Reality) Ready](#ir-infinite-reality-ready)
-    * [One World Open World MMO (VR) (Game Of Games Engine)](#one-world-open-world-mmo-vr-game-of-games-engine)
-    * [XR/IR Unified Interface To The World](#xrir-unified-interface-to-the-world)
-    * [ARC/HoloMap/Synergy Engine Integration](#archolomapsynergy-engine-integration)
-    * [WEB 5 STAR OASIS Omniverse Interoperable Metaverse Low Code Generator](#web-5-star-oasis-omniverse-interoperable-metaverse-low-code-generator)
-    * [AI/Machine Learning Over All Of World's Aggregated Data](#aimachine-learning-over-all-of-worlds-aggregated-data)
-    * [Summary](#summary)
-  - [Benefits Of Building On The WEB4 OASIS API](#web4-oasisapi-benefits)
-  - [WEB4 OASIS API Packages](#web4-oasisapi-packages)
-    * [Javascript](#javascript)
-    * [Unity](#unity)
-    * [C#](#csharp)
-  - [Do You Want To Get Involved?](#get-involved)
+    - [Best Of All Worlds](#best-of-all-worlds)
+    - [Maximum Interopability/Aggregation](#maximum-interopabilityaggregation)
+    - [HOT Swappable Plugin Architecture](#hot-swappable-plugin-architecture)
+    - [Full Redundancy/Zero Downtime/Impossible To Shutdown](#full-redundancyzero-downtimeimpossible-to-shutdown)
+    - [HTTP REST/gRPC/GraphQL/CLI/Native Endpoints](#http-restgrpcgraphqlclinative-endpoints)
+    - [Javascript, Unity & C# Packages](#javascript-unity--c-packages)
+    - [Avatar API](#avatar-api)
+    - [Karma API](#karma-api)
+    - [Full Accountability/Zero Crime/Dark Net Prove](#full-accountabilityzero-crimedark-net-prove)
+    - [Data API](#data-api)
+    - [Future Prove! Never Need To Learn A New Tech Stack/Language Again](#future-prove-never-need-to-learn-a-new-tech-stacklanguage-again)
+    - [SEEDS API](#seeds-api)
+    - [Keys/Wallet API](#keyswallet-api)
+    - [Works Offline/Local Networks (LAN, Bluetooth, Mesh Networks)](#works-offlinelocal-networks-lan-bluetooth-mesh-networks)
+    - [OAPPS - Write Once, Deploy Everywhere](#oapps---write-once-deploy-everywhere)
+    - [One API To Rule Them All - The GOD Protocol/API](#one-api-to-rule-them-all---the-god-protocolapi)
+    - [Full Smart Contract Interoperability](#full-smart-contract-interoperability)
+    - [Powerful Pick n Mix & Plug n Play UI Components](#powerful-pick-n-mix--plug-n-play-ui-components)
+    - [WEB/2D/3D/AR/VR/IR/Map/Meta Visusalization](#web2d3darvrirmapmeta-visusalization)
+    - [Our World Geo-Location/AR/IR/Map UI (Game Of Games Engine)](#our-world-geo-locationarirmap-ui-game-of-games-engine)
+    - [IR (Infinite Reality) Ready](#ir-infinite-reality-ready)
+    - [One World Open World MMO (VR) (Game Of Games Engine)](#one-world-open-world-mmo-vr-game-of-games-engine)
+    - [XR/IR Unified Interface To The World](#xrir-unified-interface-to-the-world)
+    - [ARC/HoloMap/Synergy Engine Integration](#archolomapsynergy-engine-integration)
+    - [WEB 5 STAR OASIS Omniverse Interoperable Metaverse Low Code Generator](#web-5-star-oasis-omniverse-interoperable-metaverse-low-code-generator)
+    - [AI/Machine Learning Over All Of World's Aggregated Data](#aimachine-learning-over-all-of-worlds-aggregated-data)
+    - [Summary](#summary)
+  - [Benefits Of Building On The WEB4 OASIS API](#benefits-of-building-on-the-web4-oasis-api)
+  - [WEB 4 OASIS API Packages](#web-4-oasis-api-packages)
+    - [Javascript](#javascript)
+    - [Unity](#unity)
+    - [C](#c)
+  - [Do You Want To Get Involved?](#do-you-want-to-get-involved)
+  - [How To Use](#how-to-use)
   - [Getting started](#getting-started)
   - [Auth](#auth)
     - [Login](#login)
@@ -51,8 +53,26 @@
     - [removeKarma](#removekarma)
   - [Data](#data)
     - [loadHolon](#loadholon)
+    - [getLoadHolonById](#getloadholonbyid)
+    - [getHolonChildById](#getholonchildbyid)
+    - [getHolonChildByIdAndSetGlobally](#getholonchildbyidandsetglobally)
+    - [getHolonChildByIdAndSetGloballyWithMoreOptions](#getholonchildbyidandsetgloballywithmoreoptions)
     - [loadAllHolons](#loadallholons)
+    - [loadAllHolonsForGivenType](#loadallholonsforgiventype)
+    - [getHolonChildByHolonType](#getholonchildbyholontype)
+    - [getHolonChildByHolonTypeAndSetGlobally](#getholonchildbyholontypeandsetglobally)
+    - [getHolonChildByHolonTypeAndSetGloballyWithMoreOptions](#getholonchildbyholontypeandsetgloballywithmoreoptions)
+    - [loadHolonForParent](#loadholonforparent)
+    - [getLoadHolonParentByIdAndType](#getloadholonparentbyidandtype)
+    - [getHolonParent](#getholonparent)
+    - [getHolonParentAndSetGlobally](#getholonparentandsetglobally)
+    - [getHolonParenteAndSetGloballyWithMoreOptions](#getholonparenteandsetgloballywithmoreoptions)
     - [saveHolon](#saveholon)
+    - [saveHolonByObj](#saveholonbyobj)
+    - [saveHolonWithParams](#saveholonwithparams)
+    - [saveHolonAndSetGlobally](#saveholonandsetglobally)
+    - [saveHolonAndSetGloballyWithMoreOptions](#saveholonandsetgloballywithmoreoptions)
+    - [saveHolonOffChain](#saveholonoffchain)
     - [deleteHolon](#deleteholon)
   - [Karma](#karma)
     - [getKarmaForAvatar](#getkarmaforavatar)
@@ -77,21 +97,19 @@
 
 This package is for client applications to connect and work with the OASIS API.
 
-
 ## Overview
 
 The WEB4 OASIS API enables you to integrate your project with everything else (WEB2 & WEB3) such as all blockchains, holochain & much more. It also provides SSO, load balancing, auto failover, auto replication, zero downtime, zero lag, infinite players and much more!
 
 Various OASIS API functions and services can be accessed with this API such as Authentication, Karma, Avatars, Data, SEEDS, Wallets/Keys & more...
 
-http://api.oasisplatform.world
+<http://api.oasisplatform.world>
 
-This allows you to bridge between all of WEB2 & WEB3 Holochain, IPFS, MongoDB, SQLLite, Neo4j, Solana, Ethereum, EOS & ThreeFold with many more coming soon such as COSMOS, Polkadot, Polygon, SOLID, ActivityPub, Near, Nexus, HIVE, CEPTR Pluggable Protocol, Fediverse, XMPP & many more! :) The majority of these are aimed at building a truly decentralised distributed internet (Web 3.0) and this is also the aim of the OASIS API. If you wish to get involved and help build out any of these providers or any other you would like to see integrated please get in touch here: https://t.me/ourworldthegamechat. 
+This allows you to bridge between all of WEB2 & WEB3 Holochain, IPFS, MongoDB, SQLLite, Neo4j, Solana, Ethereum, EOS & ThreeFold with many more coming soon such as COSMOS, Polkadot, Polygon, SOLID, ActivityPub, Near, Nexus, HIVE, CEPTR Pluggable Protocol, Fediverse, XMPP & many more! :) The majority of these are aimed at building a truly decentralised distributed internet (Web 3.0) and this is also the aim of the OASIS API. If you wish to get involved and help build out any of these providers or any other you would like to see integrated please get in touch here: <https://t.me/ourworldthegamechat>.
 
 WEB 4 OASIS API is a fully distributed decentralised fault tolerant load balanced integrated API that runs across the full Internet acting as an abstraction layer over everything and serves as a network of networks. It is unity consciousnes expressed within the technical sphere. [The OASIS API is a global universal API that aims to connect anything to everything](https://github.com/NextGenSoftwareUK/Our-World-OASIS-API-HoloNET-HoloUnity-And-.NET-HDK#the-universal-api-to-connect-everything-to-everything--no-more-silos-walled-gardens-) to eliminate walled gardens/silos.
 
 The core OASIS (Open Advanced Sensory Immersion System) API that powers Our World/One World and manages the central profile/avatar/karma system that other satellite apps/games/sites/services plug into it and share. This allows karma to be earnt in the satellite apps/games by doing good deeds or progressing self help apps for example.
-
 
 ### Best Of All Worlds
 
@@ -105,16 +123,13 @@ The WEB4 OASIS API connects & Integrates everything (all of WEB 2 & WEB 3) inclu
 
 The whole point of the OASIS API is to allow everything to be fully interoperable so data can be shared between any provider, the architecture opens the doors for many more use cases like importing and exporting your data between providers, aggregating all your data to remove all silos so better sense making and AI machine learning can be made to analyse and to make predictions, smart contract interoperability, etc
 
-
 ### HOT Swappable Plugin Architecture
 
-The OASIS API features a HOT Swappable Plugin Architecture meaning any OASIS Provider can be deployed and used at runtime without having to re-compile or deploy a ONODE (OASIS Node). 
+The OASIS API features a HOT Swappable Plugin Architecture meaning any OASIS Provider can be deployed and used at runtime without having to re-compile or deploy a ONODE (OASIS Node).
 
-
-### Full Redundancy/Zero Downtime/Impossible To Shutdown!
+### Full Redundancy/Zero Downtime/Impossible To Shutdown
 
 It also allows full data redundancy and for it to be network independent so if one network goes down it can automatically switch to the next fastest node in your area regardless of what network it is on. So it will be impossible to shut the OASIS down, you need to shut the entire Internet down, goodluck with that! ;-)
-
 
 ### HTTP REST/gRPC/GraphQL/CLI/Native Endpoints
 
@@ -126,13 +141,13 @@ The OASIS API currently has a [Javascript](#javascript), [Unity](#unity) & [C#](
 
 ### Avatar API
 
-The OASIS API features a powerful Avatar SSO (Single Sign On) API allowing ONE login across all your sites, games, apps, services, etc across all devices and platforms for your OASIS Avatar where you have FULL control of ALL of your data right down to the individual field level and whether each field is Replicated/Shared (ReadOnly) or Shared (ReadWrite). You no longer need to remember multiple login details, you can have just ONE login (avatar), that follows you everywhere and you have FULL control of. You choose where your data is stored and who has access to it. This avatar is the digital twin of YOU and allows you to earn/lose karma through the Karma API. 
+The OASIS API features a powerful Avatar SSO (Single Sign On) API allowing ONE login across all your sites, games, apps, services, etc across all devices and platforms for your OASIS Avatar where you have FULL control of ALL of your data right down to the individual field level and whether each field is Replicated/Shared (ReadOnly) or Shared (ReadWrite). You no longer need to remember multiple login details, you can have just ONE login (avatar), that follows you everywhere and you have FULL control of. You choose where your data is stored and who has access to it. This avatar is the digital twin of YOU and allows you to earn/lose karma through the Karma API.
 
 ### Karma API
 
-The OASIS API also has a powerful Karma API where your avatar (YOU) can earn and lose karma across any OAPP (OASIS App) that is integrated into the OASIS API (websites, apps, games, services, etc). You can earn karma for picking up litter, recycling, going green, helping people, eating/drinking healthily, improving your self or the enviroment, donating to chairty, volunteering for good causes, planting trees, progressing in self help apps, medidation, yoga, mindfulness, spending time in nature, etc. You lose karma for dropping liter, being abusive online, not eating healthily. 
+The OASIS API also has a powerful Karma API where your avatar (YOU) can earn and lose karma across any OAPP (OASIS App) that is integrated into the OASIS API (websites, apps, games, services, etc). You can earn karma for picking up litter, recycling, going green, helping people, eating/drinking healthily, improving your self or the enviroment, donating to chairty, volunteering for good causes, planting trees, progressing in self help apps, medidation, yoga, mindfulness, spending time in nature, etc. You lose karma for dropping liter, being abusive online, not eating healthily.
 
-This karma is then redeemed for real world goods & services such as for a free smoothie, yoga class, retreat etc. 
+This karma is then redeemed for real world goods & services such as for a free smoothie, yoga class, retreat etc.
 
 It also unlocks new gifts and super powers for your avatar in the Our World/One World games that plug into the API, they are the first worlds of the new upcoming OASIS Omniverse (network of metaverses).
 
@@ -144,13 +159,13 @@ The extra benefit of this is that everyone is fully accountable for their action
 
 It also features the powerful [Data API](https://www.ourworldthegame.com/single-post/web4-oasis-api-v2-3-1-released-with-new-improved-data-api-and-lots-more) allowing data to be shared between the above providers giving full interoperability. It also has powerful features such as auto-fail over, auto-load balancing and auto-replication across the providers so if one node goes down in your local area it will automatically switch to the next fastest node in your area independent of the network it belongs to, this way the OASIS API never has any downtime and will always be super fast and not reliant on only one network. This also applies for all the other API's such as the Avatar API etc. With unity consciousness the possibilities are limitless!
 
-### Future Prove! Never Need To Learn A New Tech Stack/Language Again!
+### Future Prove! Never Need To Learn A New Tech Stack/Language Again
 
 The OASIS API is very intuitive and easy to use hiding away the complexities of the lower-level networks/protocols/platforms/API's but at the same time gives full power and control to power users who wish to dive deeper into the lower-level tech. This also means you do not need to keep learning new tech/APIs/programming languages etc, from now on you only ever need to use the very intuitive powerful OASIS API and the rest is taken care of for you! Also, even if a newer version of one network/API comes out like Holochain RSM or Ethereum 2, you do not need to do anything to port your app to the latest version, the OASIS will take care of this for you. This saves you valuable time to focus on bringing your idea to life! Happy Days! :)
 
 ### SEEDS API
 
-The OASIS API also has a SEEDS API allowing people to earn karma for donating and paying with Seeds (a new currency based on re-generating the planet) as well as when they invite or join Seeds. Read more here: https://joinseeds.earth/
+The OASIS API also has a SEEDS API allowing people to earn karma for donating and paying with Seeds (a new currency based on re-generating the planet) as well as when they invite or join Seeds. Read more here: <https://joinseeds.earth/>
 
 ### Keys/Wallet API
 
@@ -169,6 +184,7 @@ It can also then sync your public key and wallet address etc when you go back on
 This same technology works across all of the API's (Avatar, Data, etc) so you can work offline if your connection to the internet goes down and will automatically sync once it goes back online. It even allows you to network over LAN, Bluetooth, Mesh Networks, etc.
 
 ### OAPPS - Write Once, Deploy Everywhere
+
 OAPP's (OASIS Apps) that use the OASIS API can be deployed anywhere across any network, platform, API or protocol. This includes all of WEB2 (clouds, databases, etc),  Holochain, every popular blockchain, ActivityPub, IPFS, SOLID & many more... check the growing list of providers supported below.
 
 Gone are the days of having to write multiple dApps and having to spend lots of time setting up your dev environment for each one such as the network, wallet, account, etc. The OASIS API can manage all of this for you with one simple to use UI (web, desktop and Unity versions planned). The Unity UI will in fact be Our World and will be the most feature rich through the XR interface.
@@ -176,6 +192,7 @@ Gone are the days of having to write multiple dApps and having to spend lots of 
 You can also of course fully manage every feature and option through the API itself so you could even write your own UI to it if you so wished.
 
 ### One API To Rule Them All - The GOD Protocol/API
+
 The OASIS API will allow you to connect into everything including e-commerce, trading, security, social networks, blockchains, holochain networks, etc. regardless of where they are running (WEB2 or WEB3/IoT).
 
 ### Full Smart Contract Interoperability
@@ -192,7 +209,7 @@ Each OAPP can have a Web, 2D, 3D AR, 3D VR, 3D Map, 3D IR ([Infinite Reality](ht
 
 ### Our World Geo-Location/AR/IR/Map UI (Game Of Games Engine)
 
-[Our World](http://www.ourworldthegame.com) is the first world in the infinite Omniverse (what comes after Metaverse). Our World also acts as the UI to the OASIS API allowing the various OAPP’s to have a 3D object/2D sprite representation on the 3D map of the world. They can then view meta data about the app as well as launch the app from within Our World (phase 1 of The OASIS you see in Ready Player One). Through the OASIS API people have a full geo-location API allowing them to fully control the 3D map, add quests, routes, sub-games, AR hotspots, and so much more. One possible use case would be Smart Cities amongst many more. 
+[Our World](http://www.ourworldthegame.com) is the first world in the infinite Omniverse (what comes after Metaverse). Our World also acts as the UI to the OASIS API allowing the various OAPP’s to have a 3D object/2D sprite representation on the 3D map of the world. They can then view meta data about the app as well as launch the app from within Our World (phase 1 of The OASIS you see in Ready Player One). Through the OASIS API people have a full geo-location API allowing them to fully control the 3D map, add quests, routes, sub-games, AR hotspots, and so much more. One possible use case would be Smart Cities amongst many more.
 
 [Our World](https://github.com/NextGenSoftwareUK/Our-World-OASIS-API-HoloNET-HoloUnity-And-.NET-HDK#our-world-overview) is an exciting immersive next generation 3D XR/IR (Infinite Reality) educational game/platform/social network/ecosystem teaching people on how to look after themselves, each other and the planet using the latest cutting-edge technology. It teaches people the importance of real-life face to face connections with human beings and encourages them to get out into nature using Augmented Reality similar to Pokémon Go but on a much more evolved scale. This is our flagship product and is our top priority due to the massive positive impact it will make upon the world...
 
@@ -205,15 +222,15 @@ The first phase of Our World will be a de-centralised distributed XR Gamified 3D
 [Check out the site](http://www.ourworldthegame.com) for more info.
 
 Read another more refined (and updated) summary on the github repo code base for the Our World Smartphone AR Prototype:<br>
-https://github.com/NextGenSoftwareUK/Our-World-Smartphone-Prototype-AR
+<https://github.com/NextGenSoftwareUK/Our-World-Smartphone-Prototype-AR>
 
 ### IR (Infinite Reality) Ready
 
-IR is what comes after AR, VR & XR. It is where the boundary between real and the virtual become one. More coming soon... ;-) 
+IR is what comes after AR, VR & XR. It is where the boundary between real and the virtual become one. More coming soon... ;-)
 
 ### One World Open World MMO (VR) (Game Of Games Engine)
 
-One World is Our World's cousin and is a Open World MMORPG set in the past allowing people to build whatever they can imagine unleashing their FULl creativity & potential! It uses bio-feedback technology allowing you to move objects with your mind with real force powers! :) You can also see other players avatar/chakras in real-time and so much more! You can medidate to make it rain to water your crops or to help your camp fire burn brighter! 
+One World is Our World's cousin and is a Open World MMORPG set in the past allowing people to build whatever they can imagine unleashing their FULl creativity & potential! It uses bio-feedback technology allowing you to move objects with your mind with real force powers! :) You can also see other players avatar/chakras in real-time and so much more! You can medidate to make it rain to water your crops or to help your camp fire burn brighter!
 
 One World will be the first AAA MMO game and 2D/3D Social Network to run on HoloChain and the Blockchain. It will also be the first to integrate a social network with a MMO game/platform as well as all of these technologies and devices together. As with the rest of the game, it will be leading the way in what can be done with this NextGen Technology for the benefit and upliftment of humanity.
 
@@ -248,81 +265,82 @@ Both WEB 4 & WEB 5 use machine learning AI to analyse all of the worlds data to 
 To summarize, WEB4 OASIS API aggregates all of the worlds data into a fully unified API to allow better sense making to made, which then feeds into WEB5 STAR, which expresses it in a cyberspace ontology and connects the worlds data to the rest of the COSMOS and Galaxy... ;-)
 
 <a name="web4-oasisapi-benefits"></a>
-## Benefits Of Building On The WEB4 OASIS API:
 
-* **Integrate any WEB2 or WEB3 tech into your (web)app without having to learn or worry about new tech stacks/languages (the OASIS API hides all the complexity away so you can focus on creating your dream app!).**
+## Benefits Of Building On The WEB4 OASIS API
 
-* **No need to worry about how different blockchains or WEB2 and WEB3 can talk and integrate with each other, the OASIS handles all this for you!**
+- **Integrate any WEB2 or WEB3 tech into your (web)app without having to learn or worry about new tech stacks/languages (the OASIS API hides all the complexity away so you can focus on creating your dream app!).**
 
-* **Future prove so when any new language/tech comes out such as Ethereum2 etc, these will be automatically added to the OASIS API for FREE, you will have FREE upgrades for life!**
+- **No need to worry about how different blockchains or WEB2 and WEB3 can talk and integrate with each other, the OASIS handles all this for you!**
 
-* **SSO Avatar.**
+- **Future prove so when any new language/tech comes out such as Ethereum2 etc, these will be automatically added to the OASIS API for FREE, you will have FREE upgrades for life!**
 
-* **Karma API (full accountability/zero crime/dark net prove) System.**
+- **SSO Avatar.**
 
-* **Maximum Integration & Interoprability.**
+- **Karma API (full accountability/zero crime/dark net prove) System.**
 
-* **Auto Load-balancing.**
+- **Maximum Integration & Interoprability.**
 
-* **Auto Fail-over.**
+- **Auto Load-balancing.**
 
-* **Auto Replication.**
+- **Auto Fail-over.**
 
-* **Best Of All Worlds.**
+- **Auto Replication.**
 
-* **Maximum Interopability/Aggregation.**
+- **Best Of All Worlds.**
 
-* **HOT Swapable PlugIn Architecture.**
+- **Maximum Interopability/Aggregation.**
 
-* **HTTP REST/gRPC/GraphQL/CLI/Native Endpoints.**
+- **HOT Swapable PlugIn Architecture.**
 
-* **Javascript, Unity & C# Packages - More Coming...**
+- **HTTP REST/gRPC/GraphQL/CLI/Native Endpoints.**
 
-* **Write Once, Deploy Everywhere Now & Forever.**
+- **Javascript, Unity & C# Packages - More Coming...**
 
-* **One API To Rule Them All - The GOD Protocol/API.**
+- **Write Once, Deploy Everywhere Now & Forever.**
 
-* **Full Smart Contract Interoperability.**
+- **One API To Rule Them All - The GOD Protocol/API.**
 
-* **AI/Machine Learning Over All Of World's Aggregated Data.**
+- **Full Smart Contract Interoperability.**
 
-* **Triple Level Quantum Resistant Encryption.**
+- **AI/Machine Learning Over All Of World's Aggregated Data.**
 
-* **Intelligent Key Management/Backups/Redundancy (never lose your keys again!).**
+- **Triple Level Quantum Resistant Encryption.**
 
-* **Full Redundancy/Zero Downtime/Impossible To Shutdown!**
+- **Intelligent Key Management/Backups/Redundancy (never lose your keys again!).**
 
-* **Zero Lag.**
+- **Full Redundancy/Zero Downtime/Impossible To Shutdown!**
 
-* **Infinite Players Online At Same Time.**
+- **Zero Lag.**
 
-* **Decentralised Distributed P2P Networking.**
+- **Infinite Players Online At Same Time.**
 
-* **Can Work Off-line (will automatically sync once online again).**
+- **Decentralised Distributed P2P Networking.**
 
-* **When Offline Can Still Sync And Work Over LAN, Bluetooth, Mesh Networks, etc.**
+- **Can Work Off-line (will automatically sync once online again).**
 
-* **Agent Centric (User owns and stores own data).**
+- **When Offline Can Still Sync And Work Over LAN, Bluetooth, Mesh Networks, etc.**
 
-* **WEB/2D/3D/AR/VR/IR/Map/Meta Visusalization.**
+- **Agent Centric (User owns and stores own data).**
 
-* **Our World Geo-Location/AR/IR/Map UI (Game of Games Engine).**
+- **WEB/2D/3D/AR/VR/IR/Map/Meta Visusalization.**
 
-* **One World Open World MMO (VR) UI (Game of Games Engine).**
+- **Our World Geo-Location/AR/IR/Map UI (Game of Games Engine).**
 
-* **Powerful Pick n Mix & Plug n Play UI Components.**
+- **One World Open World MMO (VR) UI (Game of Games Engine).**
 
-* **Smart City Ready.**
+- **Powerful Pick n Mix & Plug n Play UI Components.**
 
-* **Bio-feedback Ready.**
+- **Smart City Ready.**
 
-* **Synergy Engine Ready.**
+- **Bio-feedback Ready.**
 
-* **IR (Infinite Reality) Ready.**
+- **Synergy Engine Ready.**
 
-* **WEB5 Omniverse/Metaverse Ready.**
+- **IR (Infinite Reality) Ready.**
 
-* **Plus Much More!**
+- **WEB5 Omniverse/Metaverse Ready.**
+
+- **Plus Much More!**
 
 Check out more info below:<br><br>
 [The Power Of The OASIS API](https://drive.google.com/file/d/1nnhGpXcprr6kota1Y85HDDKsBfJHN6sn/view?usp=sharing) <br>
@@ -333,23 +351,26 @@ Check out more info below:<br><br>
 [Main WEB4 OASIS API & WEB5 STAR Repo](https://github.com/NextGenSoftwareUK/Our-World-OASIS-API-HoloNET-HoloUnity-And-.NET-HDK)
 
 <a name="web4-oasisapi-packages"></a>
+
 ## WEB 4 OASIS API Packages
 
 ### Javascript
-https://www.npmjs.com/package/oasis-api \
-https://github.com/NextGenSoftwareUK/OASIS-API-Javascipt-Package
+
+<https://www.npmjs.com/package/oasis-api> \
+<https://github.com/NextGenSoftwareUK/OASIS-API-Javascipt-Package>
 
 ### Unity
 
-https://github.com/NextGenSoftwareUK/OASIS-API-Unity-Package
+<https://github.com/NextGenSoftwareUK/OASIS-API-Unity-Package>
 
 <a name="csharp"></a>
-### C#
 
-https://github.com/NextGenSoftwareUK/Our-World-OASIS-API-HoloNET-HoloUnity-And-.NET-HDK
+### C #
 
+<https://github.com/NextGenSoftwareUK/Our-World-OASIS-API-HoloNET-HoloUnity-And-.NET-HDK>
 
 <a name="get-involved"></a>
+
 ## Do You Want To Get Involved?
 
 We are always looking for people to jump in and get involved, you do not need to be an existing coder, we can help you with that... you just need a willingness to learn and to have an open heart, we are always more interested with what is in your heart rather than your head! ;-)
@@ -377,25 +398,24 @@ If the answer is YES, then please [proceed to here](https://github.com/NextGenSo
 
 <a href="https://drive.google.com/file/d/1b_G08UTALUg4H3jPlBdElZAFvyRcVKj1/view">Dev Requirements To Join The Our World Tribe</a><br>
 <a href="https://drive.google.com/file/d/12pCk20iLw_uA1yIfojcP6WwvyOT4WRiO/view?usp=sharing">The Our World Mission (Summary)</a><br>
-http://www.ourworldthegame.com<br>
-http://oasisplatform.world/swagger<br>
-https://github.com/NextGenSoftwareUK/Our-World-OASIS-API-HoloNET-HoloUnity-And-.NET-HDK<br>
-http://www.gofundme.com/ourworldthegame<br>
+<http://www.ourworldthegame.com><br>
+<http://oasisplatform.world/swagger><br>
+<https://github.com/NextGenSoftwareUK/Our-World-OASIS-API-HoloNET-HoloUnity-And-.NET-HDK><br>
+<http://www.gofundme.com/ourworldthegame><br>
 
-http://www.nextgensoftware.co.uk<br>
-http://www.yoga4autism.com<br>
+<http://www.nextgensoftware.co.uk><br>
+<http://www.yoga4autism.com><br>
 
-https://youtu.be/wdYa5wQUfrg<br>
-https://www.youtube.com/watch?v=2oY4_LZBW4M&t=3s<br>
-https://www.youtube.com/watch?v=rvNJ6poMduo&t=5s<br>
-https://www.youtube.com/watch?v=zyVmciqD9rs<br>
-https://www.youtube.com/watch?v=SB97mvzJiRg&t=3s<br>
+<https://youtu.be/wdYa5wQUfrg><br>
+<https://www.youtube.com/watch?v=2oY4_LZBW4M&t=3s><br>
+<https://www.youtube.com/watch?v=rvNJ6poMduo&t=5s><br>
+<https://www.youtube.com/watch?v=zyVmciqD9rs><br>
+<https://www.youtube.com/watch?v=SB97mvzJiRg&t=3s><br>
 
 **TOGETHER WE CAN CREATE A BETTER WORLD**
 
 In Love, Light & Hope,<br>
 The Our World Tribe
-
 
 ## How To Use
 
@@ -508,6 +528,7 @@ This class manages a user's avatar from adding Karma, deleting and updating avat
 ```js
 import { Avatar } from "oasis-api"
 ```
+
 ### get
 
 This function gets an avatar when its ID is provided
@@ -531,6 +552,7 @@ const res = await avatar.getAll();
 ```
 
 ### update
+
 This updates the avatar with the given ID. User must be logged in & authenticated for this method to work.
 
 ```js
@@ -540,7 +562,9 @@ avatar.update(data, id).then(()=>{
   // pass
 })
 ```
+
 the parameter **data** should be of this shape
+
 ```js{
   "title": "string",
   "firstName": "string",
@@ -553,7 +577,9 @@ the parameter **data** should be of this shape
 ```
 
 ### delete
+
 This updates the avatar with the given ID. User must be logged in & authenticated for this method to work.
+
 ```js
 avatar.delete(id).then(()=>{
   //pass
@@ -563,7 +589,9 @@ avatar.delete(id).then(()=>{
 ```
 
 ### addKarma
+
 Adds karma to avatar. User must be logged in & authenticated for this method to work.
+
 ```js
 avatar.addKarma(id, data).then(()=>{
   //pass
@@ -571,9 +599,11 @@ avatar.addKarma(id, data).then(()=>{
   // pass
 })
 ```
+
 **params**
 *id*: Avatar id
 *data schema*
+
 ```js{
   "karmaType": "string",
   "karmaSourceType": "string",
@@ -583,7 +613,9 @@ avatar.addKarma(id, data).then(()=>{
 ```
 
 ### removeKarma
+
 Removes karma to avatar. User must be logged in & authenticated for this method to work.
+
 ```js
 avatar.removeKarma(id, data).then(()=>{
   //pass
@@ -591,9 +623,11 @@ avatar.removeKarma(id, data).then(()=>{
   // pass
 })
 ```
+
 **params**
 *id*: Avatar id
 *data schema*
+
 ```js{
   "karmaType": "string",
   "karmaSourceType": "string",
@@ -605,25 +639,345 @@ avatar.removeKarma(id, data).then(()=>{
 ## Data
 
 ### loadHolon
-Load's a holon data object for the given id.
+
+Load's a holon data object for the given id. Set the loadChildren flag to true to load all the holon's child holon's. This defaults to true. If loadChildren is set to true, you can set the Recursive flag to true to load all the child's holon's recursively, or false to only load the first level of child holon's. This defaults to true. If loadChildren is set to true, you can set the maxChildDepth value to a custom int of how many levels down you wish to load, it defaults to 0, which means it will load to infinite depth. Set the continueOnError flag to true if you wish it to continue loading child holon's even if an error has occured, this defaults to true. Set the Version int to the version of the holon you wish to load (defaults to 0) which means the latest version. Pass in the provider you wish to use. Set the autoFailOverMode to 'ON' if you wish this call to work through the the providers in the auto-failover list until it succeeds. Set it to OFF if you do not or to 'DEFAULT' to default to the global OASISDNA setting. Set the autoReplicationMode to 'ON' if you wish this call to auto-replicate to the providers in the auto-replication list. Set it to OFF if you do not or to UseGlobalDefaultInOASISDNA to 'DEFAULT' to the global OASISDNA setting. Set the autoLoadBalanceMode to 'ON' if you wish this call to use the fastest provider in your area from the auto-loadbalance list. Set it to OFF if you do not or to UseGlobalDefaultInOASISDNA to 'DEFAULT' to the global OASISDNA setting. Set the waitForAutoReplicationResult flag to true if you wish for the API to wait for the auto-replication to complete before returning the results. Set the setglobally flag to false to use these settings only for this request or true for it to be used for all future requests. Set the showDetailedSettings flag to true to view detailed settings such as the list of providers in the auto-failover, auto-replication & auto-load balance lists.
 
 ```js
 const data = new oasis.Data()
-data.loadHolon(id).then(()=>{
+data.loadHolon(data={...}).then(()=>{
   //pass
 }).catch((err)=>{
   // pass
 })
 ```
-**params**
-*id*: Holon id
 
-### loadAllHolons
-Load's all holon data object for the given id.
+**params**
+*data*: object
+
+### getLoadHolonById
+
+Load's a holon data object for the given id.
 
 ```js
 const data = new oasis.Data()
-data.loadAllHolons().then(()=>{
+data.getLoadHolonById(id=1).then(()=>{
+  //pass
+}).catch((err)=>{
+  // pass
+})
+```
+
+### getHolonChildById
+
+Load's a holon data object for the given id. Set the loadChildren flag to true to load all the holon's child holon's. This defaults to true. If loadChildren is set to true, you can set the Recursive flag to true to load all the child's holon's recursively, or false to only load the first level of child holon's. This defaults to true. If loadChildren is set to true, you can set the maxChildDepth value to a custom int of how many levels down you wish to load, it defaults to 0, which means it will load to infinite depth. Set the continueOnError flag to true if you wish it to continue loading child holon's even if an error has occured, this defaults to true. Set the Version int to the version of the holon you wish to load (defaults to 0) which means the latest version.
+
+```js
+const data = new oasis.Data()
+data.getHolonChildById(data = {
+    id: "",
+    loadChildren: true,
+    recursive: true,
+    maxChildDepth: 0,
+    continueOnError: true,
+    version: 0
+  }).then(()=>{
+  //pass
+}).catch((err)=>{
+  // pass
+})
+```
+
+### getHolonChildByIdAndSetGlobally
+
+Load's a holon data object for the given id. Set the loadChildren flag to true to load all the holon's child holon's. This defaults to true. If loadChildren is set to true, you can set the Recursive flag to true to load all the child's holon's recursively, or false to only load the first level of child holon's. This defaults to true. If loadChildren is set to true, you can set the maxChildDepth value to a custom int of how many levels down you wish to load, it defaults to 0, which means it will load to infinite depth. Set the continueOnError flag to true if you wish it to continue loading child holon's even if an error has occured, this defaults to true. Set the Version int to the version of the holon you wish to load (defaults to 0) which means the latest version. Pass in the provider you wish to use. Set the setglobally flag to false to use these settings only for this request or true for it to be used for all future requests.
+
+```js
+const data = new oasis.Data()
+data.getHolonChildByIdAndSetGlobally(data = {
+    id: "",
+    loadChildren: true,
+    recursive: true,
+    maxChildDepth: 0,
+    continueOnError: true,
+    version: 0,
+    providerType: "",
+    setGlobally: true
+  }).then(()=>{
+  //pass
+}).catch((err)=>{
+  // pass
+})
+```
+
+### getHolonChildByIdAndSetGloballyWithMoreOptions
+
+Load's a holon data object for the given id. Set the loadChildren flag to true to load all the holon's child holon's. This defaults to true. If loadChildren is set to true, you can set the Recursive flag to true to load all the child's holon's recursively, or false to only load the first level of child holon's. This defaults to true. If loadChildren is set to true, you can set the maxChildDepth value to a custom int of how many levels down you wish to load, it defaults to 0, which means it will load to infinite depth. Set the continueOnError flag to true if you wish it to continue loading child holon's even if an error has occured, this defaults to true. Set the Version int to the version of the holon you wish to load (defaults to 0) which means the latest version. Pass in the provider you wish to use. Set the autoFailOverMode to 'ON' if you wish this call to work through the the providers in the auto-failover list until it succeeds. Set it to OFF if you do not or to 'DEFAULT' to default to the global OASISDNA setting. Set the autoReplicationMode to 'ON' if you wish this call to auto-replicate to the providers in the auto-replication list. Set it to OFF if you do not or to UseGlobalDefaultInOASISDNA to 'DEFAULT' to the global OASISDNA setting. Set the autoLoadBalanceMode to 'ON' if you wish this call to use the fastest provider in your area from the auto-loadbalance list. Set it to OFF if you do not or to UseGlobalDefaultInOASISDNA to 'DEFAULT' to the global OASISDNA setting. Set the waitForAutoReplicationResult flag to true if you wish for the API to wait for the auto-replication to complete before returning the results. Set the setglobally flag to false to use these settings only for this request or true for it to be used for all future requests. Set the showDetailedSettings flag to true to view detailed settings such as the list of providers in the auto-failover, auto-replication & auto-load balance lists.
+
+```js
+const data = new oasis.Data()
+data.getHolonChildByIdAndSetGloballyWithMoreOptions(data = {
+    id: "",
+    loadChildren: true,
+    recursive: true,
+    maxChildDepth: 0,
+    continueOnError: true,
+    version: 0,
+    providerType: "",
+    setGlobally: true,
+    autoReplicationMode: "",
+    autoFailOverMode: "",
+    autoLoadBalanceMode: "",
+    autoReplicationProviders: "",
+    autoFailOverProviders: "",
+    autoLoadBalanceProviders: "",
+    waitForAutoReplicationResult: "",
+    showDetailedSetting: "",
+  }).then(()=>{
+  //pass
+}).catch((err)=>{
+  // pass
+})
+```
+
+### loadAllHolons
+
+Load's all holons for the given HolonType. Use 'All' to load all holons. Set the loadChildren flag to true to load all the holon's child holon's. This defaults to true. If loadChildren is set to true, you can set the Recursive flag to true to load all the child's holon's recursively, or false to only load the first level of child holon's. This defaults to true. If loadChildren is set to true, you can set the maxChildDepth value to a custom int of how many levels down you wish to load, it defaults to 0, which means it will load to infinite depth. Set the continueOnError flag to true if you wish it to continue loading child holon's even if an error has occured, this defaults to true. Set the Version int to the version of the holon you wish to load (defaults to 0) which means the latest version. Pass in the provider you wish to use. Set the autoFailOverMode to 'ON' if you wish this call to work through the the providers in the auto-failover list until it succeeds. Set it to OFF if you do not or to 'DEFAULT' to default to the global OASISDNA setting. Set the autoReplicationMode to 'ON' if you wish this call to auto-replicate to the providers in the auto-replication list. Set it to OFF if you do not or to UseGlobalDefaultInOASISDNA to 'DEFAULT' to the global OASISDNA setting. Set the autoLoadBalanceMode to 'ON' if you wish this call to use the fastest provider in your area from the auto-loadbalance list. Set it to OFF if you do not or to UseGlobalDefaultInOASISDNA to 'DEFAULT' to the global OASISDNA setting. Set the waitForAutoReplicationResult flag to true if you wish for the API to wait for the auto-replication to complete before returning the results. Set the setglobally flag to false to use these settings only for this request or true for it to be used for all future requests. Set the showDetailedSettings flag to true to view detailed settings such as the list of providers in the auto-failover, auto-replication & auto-load balance lists.
+
+```js
+const data = new oasis.Data()
+data.loadAllHolons({
+  "providerType": "string",
+  "setGlobally": true,
+  "autoFailOverMode": "string",
+  "autoReplicationMode": "string",
+  "autoLoadBalanceMode": "string",
+  "autoFailOverProviders": "string",
+  "autoReplicationProviders": "string",
+  "autoLoadBalanceProviders": "string",
+  "waitForAutoReplicationResult": true,
+  "showDetailedSettings": true,
+  "recursive": true,
+  "maxChildDepth": 0,
+  "continueOnError": true,
+  "version": 0,
+  "loadChildren": true,
+  "holonType": "string"
+}).then(()=>{
+  //pass
+}).catch((err)=>{
+  // pass
+})
+```
+
+### loadAllHolonsForGivenType
+
+Load's all holons for the given HolonType. Use 'All' to load all holons.
+
+```js
+const data = new oasis.Data()
+data.loadAllHolonsForGivenType(holonType).then(()=>{
+  //pass
+}).catch((err)=>{
+  // pass
+})
+```
+
+### getHolonChildByHolonType
+
+Load's all holons for the given HolonType. Use 'All' to load all holons. Set the loadChildren flag to true to load all the holon's child holon's. This defaults to true. If loadChildren is set to true, you can set the Recursive flag to true to load all the child's holon's recursively, or false to only load the first level of child holon's. This defaults to true. If loadChildren is set to true, you can set the maxChildDepth value to a custom int of how many levels down you wish to load, it defaults to 0, which means it will load to infinite depth. Set the continueOnError flag to true if you wish it to continue loading child holon's even if an error has occured, this defaults to true. Set the Version int to the version of the holon you wish to load (defaults to 0) which means the latest version.
+
+```js
+const data = new oasis.Data()
+data.getHolonChildByHolonType(
+  {
+      holonType: "",
+      loadChildren: true,
+      recursive: true,
+      maxChildDepth: 0,
+      continueOnError: true,
+      version: 0,
+    }
+).then(()=>{
+  //pass
+}).catch((err)=>{
+  // pass
+})
+```
+
+### getHolonChildByHolonTypeAndSetGlobally
+
+Load's all holons for the given HolonType. Use 'All' to load all holons. Set the loadChildren flag to true to load all the holon's child holon's. This defaults to true. If loadChildren is set to true, you can set the Recursive flag to true to load all the child's holon's recursively, or false to only load the first level of child holon's. This defaults to true. If loadChildren is set to true, you can set the maxChildDepth value to a custom int of how many levels down you wish to load, it defaults to 0, which means it will load to infinite depth. Set the continueOnError flag to true if you wish it to continue loading child holon's even if an error has occured, this defaults to true. Set the Version int to the version of the holon you wish to load (defaults to 0) which means the latest version. Pass in the provider you wish to use. Set the setglobally flag to false to use these settings only for this request or true for it to be used for all future requests.
+
+```js
+const data = new oasis.Data()
+data.getHolonChildByHolonTypeAndSetGlobally(
+  {
+      holonType: "",
+      loadChildren: true,
+      recursive: true,
+      maxChildDepth: 0,
+      continueOnError: true,
+      version: 0,
+      providerType: "",
+      setGlobally: true,
+  }
+).then(()=>{
+  //pass
+}).catch((err)=>{
+  // pass
+})
+```
+
+### getHolonChildByHolonTypeAndSetGloballyWithMoreOptions
+
+Load's all holons for the given HolonType. Use 'All' to load all holons. Set the loadChildren flag to true to load all the holon's child holon's. This defaults to true. If loadChildren is set to true, you can set the Recursive flag to true to load all the child's holon's recursively, or false to only load the first level of child holon's. This defaults to true. If loadChildren is set to true, you can set the maxChildDepth value to a custom int of how many levels down you wish to load, it defaults to 0, which means it will load to infinite depth. Set the continueOnError flag to true if you wish it to continue loading child holon's even if an error has occured, this defaults to true. Set the Version int to the version of the holon you wish to load (defaults to 0) which means the latest version. Pass in the provider you wish to use. Set the autoFailOverMode to 'ON' if you wish this call to work through the the providers in the auto-failover list until it succeeds. Set it to OFF if you do not or to 'DEFAULT' to default to the global OASISDNA setting. Set the autoReplicationMode to 'ON' if you wish this call to auto-replicate to the providers in the auto-replication list. Set it to OFF if you do not or to UseGlobalDefaultInOASISDNA to 'DEFAULT' to the global OASISDNA setting. Set the autoLoadBalanceMode to 'ON' if you wish this call to use the fastest provider in your area from the auto-loadbalance list. Set it to OFF if you do not or to UseGlobalDefaultInOASISDNA to 'DEFAULT' to the global OASISDNA setting. Set the waitForAutoReplicationResult flag to true if you wish for the API to wait for the auto-replication to complete before returning the results. Set the setglobally flag to false to use these settings only for this request or true for it to be used for all future requests. Set the showDetailedSettings flag to true to view detailed settings such as the list of providers in the auto-failover, auto-replication & auto-load balance lists.
+
+```js
+const data = new oasis.Data()
+data.getHolonChildByHolonTypeAndSetGloballyWithMoreOptions(
+  {
+      holonType: "",
+      loadChildren: true,
+      recursive: true,
+      maxChildDepth: 0,
+      continueOnError: true,
+      version: 0,
+      providerType: "",
+      setGlobally: true,
+      autoReplicationMode: "",
+      autoFailOverMode: "",
+      autoLoadBalanceMode: "",
+      autoReplicationProviders: "",
+      autoFailOverProviders: "",
+      autoLoadBalanceProviders: "",
+      waitForAutoReplicationResult: "",
+      showDetailedSetting: "",
+    }
+).then(()=>{
+  //pass
+}).catch((err)=>{
+  // pass
+})
+```
+
+### loadHolonForParent
+
+Load's all holons for the given parent and the given HolonType. Use 'All' to load all holons. Set the loadChildren flag to true to load all the holon's child holon's. This defaults to true. If loadChildren is set to true, you can set the Recursive flag to true to load all the child's holon's recursively, or false to only load the first level of child holon's. This defaults to true. If loadChildren is set to true, you can set the maxChildDepth value to a custom int of how many levels down you wish to load, it defaults to 0, which means it will load to infinite depth. Set the continueOnError flag to true if you wish it to continue loading child holon's even if an error has occured, this defaults to true. Set the Version int to the version of the holon you wish to load (defaults to 0) which means the latest version. Pass in the provider you wish to use. Set the autoFailOverMode to 'ON' if you wish this call to work through the the providers in the auto-failover list until it succeeds. Set it to OFF if you do not or to 'DEFAULT' to default to the global OASISDNA setting. Set the autoReplicationMode to 'ON' if you wish this call to auto-replicate to the providers in the auto-replication list. Set it to OFF if you do not or to UseGlobalDefaultInOASISDNA to 'DEFAULT' to the global OASISDNA setting. Set the autoLoadBalanceMode to 'ON' if you wish this call to use the fastest provider in your area from the auto-loadbalance list. Set it to OFF if you do not or to UseGlobalDefaultInOASISDNA to 'DEFAULT' to the global OASISDNA setting. Set the waitForAutoReplicationResult flag to true if you wish for the API to wait for the auto-replication to complete before returning the results. Set the setglobally flag to false to use these settings only for this request or true for it to be used for all future requests. Set the showDetailedSettings flag to true to view detailed settings such as the list of providers in the auto-failover, auto-replication & auto-load balance lists.
+
+```js
+const data = new oasis.Data()
+data.loadHolonForParent(
+  {
+  "providerType: "string",
+  "setGlobally": true,
+  "autoFailOverMode": "string",
+  "autoReplicationMode": "string",
+  "autoLoadBalanceMode": "string",
+  "autoFailOverProviders": "string",
+  "autoReplicationProviders": "string",
+  "autoLoadBalanceProviders": "string",
+  "waitForAutoReplicationResult": true,
+  "showDetailedSettings": true,
+  "recursive": true,
+  "maxChildDepth": 0,
+  "continueOnError": true,
+  "version": 0,
+  "loadChildren": true,
+  "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+  "holonType": "string"
+}
+).then(()=>{
+  //pass
+}).catch((err)=>{
+  // pass
+})
+```
+
+### getLoadHolonParentByIdAndType
+
+Load's all holons for the given parent and the given HolonType. Use 'All' to load all holons.
+
+```js
+const data = new oasis.Data()
+data.getLoadHolonParentByIdAndType({
+  id: "",
+  holonType: ""
+}).then(()=>{
+  //pass
+}).catch((err)=>{
+  // pass
+})
+```
+
+### getHolonParent
+
+Load's all holons for the given parent and the given HolonType. Use 'All' to load all holons. Set the loadChildren flag to true to load all the holon's child holon's. This defaults to true. If loadChildren is set to true, you can set the Recursive flag to true to load all the child's holon's recursively, or false to only load the first level of child holon's. This defaults to true. If loadChildren is set to true, you can set the maxChildDepth value to a custom int of how many levels down you wish to load, it defaults to 0, which means it will load to infinite depth. Set the continueOnError flag to true if you wish it to continue loading child holon's even if an error has occured, this defaults to true. Set the Version int to the version of the holon you wish to load (defaults to 0) which means the latest version.
+
+```js
+const data = new oasis.Data()
+data.getHolonParent({
+      id: "",
+      holonType: "",
+      loadChildren: true,
+      recursive: true,
+      maxChildDepth: 0,
+      continueOnError: true,
+      version: 0,
+    }).then(()=>{
+  //pass
+}).catch((err)=>{
+  // pass
+})
+```
+
+### getHolonParentAndSetGlobally
+
+Load's all holons for the given parent and the given HolonType. Use 'All' to load all holons. Set the loadChildren flag to true to load all the holon's child holon's. This defaults to true. If loadChildren is set to true, you can set the Recursive flag to true to load all the child's holon's recursively, or false to only load the first level of child holon's. This defaults to true. If loadChildren is set to true, you can set the maxChildDepth value to a custom int of how many levels down you wish to load, it defaults to 0, which means it will load to infinite depth. Set the continueOnError flag to true if you wish it to continue loading child holon's even if an error has occured, this defaults to true. Set the Version int to the version of the holon you wish to load (defaults to 0) which means the latest version. Pass in the provider you wish to use. Set the setglobally flag to false to use these settings only for this request or true for it to be used for all future requests.
+
+```js
+const data = new oasis.Data()
+data.getHolonParentAndSetGlobally({
+      id: "",
+      holonType: "",
+      loadChildren: true,
+      recursive: true,
+      maxChildDepth: 0,
+      continueOnError: true,
+      version: 0,
+      providerType: "",
+      setGlobally: true,
+    }).then(()=>{
+  //pass
+}).catch((err)=>{
+  // pass
+})
+```
+
+### getHolonParenteAndSetGloballyWithMoreOptions
+
+Load's all holons for the given parent and the given HolonType. Use 'All' to load all holons. Set the loadChildren flag to true to load all the holon's child holon's. This defaults to true. If loadChildren is set to true, you can set the Recursive flag to true to load all the child's holon's recursively, or false to only load the first level of child holon's. This defaults to true. If loadChildren is set to true, you can set the maxChildDepth value to a custom int of how many levels down you wish to load, it defaults to 0, which means it will load to infinite depth. Set the continueOnError flag to true if you wish it to continue loading child holon's even if an error has occured, this defaults to true. Set the Version int to the version of the holon you wish to load (defaults to 0) which means the latest version. Pass in the provider you wish to use. Set the autoFailOverMode to 'ON' if you wish this call to work through the the providers in the auto-failover list until it succeeds. Set it to OFF if you do not or to 'DEFAULT' to default to the global OASISDNA setting. Set the autoReplicationMode to 'ON' if you wish this call to auto-replicate to the providers in the auto-replication list. Set it to OFF if you do not or to UseGlobalDefaultInOASISDNA to 'DEFAULT' to the global OASISDNA setting. Set the autoLoadBalanceMode to 'ON' if you wish this call to use the fastest provider in your area from the auto-loadbalance list. Set it to OFF if you do not or to UseGlobalDefaultInOASISDNA to 'DEFAULT' to the global OASISDNA setting. Set the waitForAutoReplicationResult flag to true if you wish for the API to wait for the auto-replication to complete before returning the results. Set the setglobally flag to false to use these settings only for this request or true for it to be used for all future requests. Set the showDetailedSettings flag to true to view detailed settings such as the list of providers in the auto-failover, auto-replication & auto-load balance lists.
+
+```js
+const data = new oasis.Data()
+data.getHolonParenteAndSetGloballyWithMoreOptions({
+      id: "",
+      holonType: "",
+      loadChildren: true,
+      recursive: true,
+      maxChildDepth: 0,
+      continueOnError: true,
+      version: 0,
+      providerType: "",
+      setGlobally: true,
+      autoReplicationMode: "",
+      autoFailOverMode: "",
+      autoLoadBalanceMode: "",
+      autoReplicationProviders: "",
+      autoFailOverProviders: "",
+      autoLoadBalanceProviders: "",
+      waitForAutoReplicationResult: "",
+      showDetailedSetting: "",
+    }).then(()=>{
   //pass
 }).catch((err)=>{
   // pass
@@ -631,7 +985,8 @@ data.loadAllHolons().then(()=>{
 ```
 
 ### saveHolon
-saves holon data object.
+
+Save's a holon data object. Set the saveChildren flag to true to save all the holon's child holon's. This defaults to true. If saveChildren is set to true, you can set the Recursive flag to true to save all the child's holon's recursively, or false to only save the first level of child holon's. This defaults to true. If saveChildren is set to true, you can set the maxChildDepth value to a custom int of how many levels down you wish to save, it defaults to 0, which means it will save to infinite depth. Set the continueOnError flag to true if you wish it to continue saving child holon's even if an error has occured, this defaults to true. Pass in the provider you wish to use. Set the autoFailOverMode to 'ON' if you wish this call to work through the the providers in the auto-failover list until it succeeds. Set it to OFF if you do not or to 'DEFAULT' to default to the global OASISDNA setting. Set the autoReplicationMode to 'ON' if you wish this call to auto-replicate to the providers in the auto-replication list. Set it to OFF if you do not or to UseGlobalDefaultInOASISDNA to 'DEFAULT' to the global OASISDNA setting. Set the autoLoadBalanceMode to 'ON' if you wish this call to use the fastest provider in your area from the auto-loadbalance list. Set it to OFF if you do not or to UseGlobalDefaultInOASISDNA to 'DEFAULT' to the global OASISDNA setting. Set the waitForAutoReplicationResult flag to true if you wish for the API to wait for the auto-replication to complete before returning the results. Set the setglobally flag to false to use these settings only for this request or true for it to be used for all future requests. Set the showDetailedSettings flag to true to view detailed settings such as the list of providers in the auto-failover, auto-replication & auto-load balance lists.
 
 ```js
 const data = new oasis.Data()
@@ -642,23 +997,121 @@ data.saveHolon(data).then(()=>{
 })
 ```
 
-### deleteHolon
-deletes a holon data object for the given id.
+### saveHolonByObj
+
+Save's a holon data object.
 
 ```js
 const data = new oasis.Data()
-data.deleteHolon(id).then(()=>{
+data.saveHolonByObj(holon, data).then(()=>{
   //pass
 }).catch((err)=>{
   // pass
 })
 ```
+
+### saveHolonWithParams
+
+Save's a holon data object. Set the saveChildren flag to true to save all the holon's child holon's. This defaults to true. If saveChildren is set to true, you can set the Recursive flag to true to save all the child's holon's recursively, or false to only save the first level of child holon's. This defaults to true. If saveChildren is set to true, you can set the maxChildDepth value to a custom int of how many levels down you wish to save, it defaults to 0, which means it will save to infinite depth. Set the continueOnError flag to true if you wish it to continue saving child holon's even if an error has occured, this defaults to true.
+
+```js
+const data = new oasis.Data()
+data.saveHolonWithParams({
+      saveChildren: true,
+      recursive: true,
+      maxChildDepth: 0,
+      continueOnError: true,
+    }, data).then(()=>{
+  //pass
+}).catch((err)=>{
+  // pass
+})
+```
+
+### saveHolonAndSetGlobally
+
+Save's a holon data object. Set the saveChildren flag to true to save all the holon's child holon's. This defaults to true. If saveChildren is set to true, you can set the Recursive flag to true to save all the child's holon's recursively, or false to only save the first level of child holon's. This defaults to true. If saveChildren is set to true, you can set the maxChildDepth value to a custom int of how many levels down you wish to save, it defaults to 0, which means it will save to infinite depth. Set the continueOnError flag to true if you wish it to continue saving child holon's even if an error has occured, this defaults to true. Pass in the provider you wish to use. Set the setglobally flag to false to use these settings only for this request or true for it to be used for all future requests.
+
+```js
+const data = new oasis.Data()
+data.saveHolonAndSetGlobally({
+      saveChildren: true,
+      recursive: true,
+      maxChildDepth: 0,
+      continueOnError: true,
+      providerType: "",
+      setGlobally: true,
+    }, data).then(()=>{
+  //pass
+}).catch((err)=>{
+  // pass
+})
+```
+
+### saveHolonAndSetGloballyWithMoreOptions
+
+Save's a holon data object. Set the saveChildren flag to true to save all the holon's child holon's. This defaults to true. If saveChildren is set to true, you can set the Recursive flag to true to save all the child's holon's recursively, or false to only save the first level of child holon's. This defaults to true. If saveChildren is set to true, you can set the maxChildDepth value to a custom int of how many levels down you wish to save, it defaults to 0, which means it will save to infinite depth. Set the continueOnError flag to true if you wish it to continue saving child holon's even if an error has occured, this defaults to true. Pass in the provider you wish to use. Set the autoFailOverMode to 'ON' if you wish this call to work through the the providers in the auto-failover list until it succeeds. Set it to OFF if you do not or to 'DEFAULT' to default to the global OASISDNA setting. Set the autoReplicationMode to 'ON' if you wish this call to auto-replicate to the providers in the auto-replication list. Set it to OFF if you do not or to UseGlobalDefaultInOASISDNA to 'DEFAULT' to the global OASISDNA setting. Set the autoLoadBalanceMode to 'ON' if you wish this call to use the fastest provider in your area from the auto-loadbalance list. Set it to OFF if you do not or to UseGlobalDefaultInOASISDNA to 'DEFAULT' to the global OASISDNA setting. Set the waitForAutoReplicationResult flag to true if you wish for the API to wait for the auto-replication to complete before returning the results. Set the setglobally flag to false to use these settings only for this request or true for it to be used for all future requests. Set the showDetailedSettings flag to true to view detailed settings such as the list of providers in the auto-failover, auto-replication & auto-load balance lists.
+
+```js
+const data = new oasis.Data()
+data.saveHolonAndSetGloballyWithMoreOptions({
+      saveChildren: true,
+      recursive: true,
+      maxChildDepth: 0,
+      continueOnError: true,
+      providerType: "",
+      setGlobally: true,
+      autoReplicationMode: "",
+      autoFailOverMode: "",
+      autoLoadBalanceMode: "",
+      autoReplicationProviders: "",
+      autoFailOverProviders: "",
+      autoLoadBalanceProviders: "",
+      waitForAutoReplicationResult: "",
+      showDetailedSetting: "",
+    }, data).then(()=>{
+  //pass
+}).catch((err)=>{
+  // pass
+})
+```
+
+### saveHolonOffChain
+
+Save's a holon data object (meta data) to the given off-chain provider and then links its hash to the on-chain provider. Set the showDetailedSettings flag to true to view detailed settings such as the list of providers in the auto-failover, auto-replication & auto-load balance lists.
+
+```js
+const data = new oasis.Data()
+data.saveHolonOffChain(data).then(()=>{
+  //pass
+}).catch((err)=>{
+  // pass
+})
+```
+
+### deleteHolon
+
+deletes a holon data object for the given id.
+
+```js
+const data = new oasis.Data()
+data.deleteHolon({
+    id: "",
+    softDelete: true
+  }).then(()=>{
+  //pass
+}).catch((err)=>{
+  // pass
+})
+```
+
 **params**
 *id*: Holon id
 
 ## Karma
 
 ### getKarmaForAvatar
+
 gets karma value of an avatar
 
 ```js
@@ -669,10 +1122,12 @@ karma.getKarmaForAvatar(id).then(()=>{
   // pass
 })
 ```
+
 **params**
 *id*: Avatar id
 
 ### removeKarmaForAvatar
+
 removes karma value of an avatar
 
 ```js
@@ -683,9 +1138,11 @@ karma.getKarmaForAvatar(id, data).then(()=>{
   // pass
 })
 ```
+
 **params**
 *id*: Avatar id
 *data schema*:
+
 ```js
 const data={
       karmaType: string,
@@ -700,7 +1157,6 @@ const data={
 `oasis.Karma.getKarmaAkashicRecordsForAvatar(id)`
 **params**
 *id*: Avatar id
-
 
 ## Holochain
 
@@ -739,14 +1195,15 @@ const data={
 `oasis.Holochain.getHoloFuelBalanceForAvatar(data)`
 **params**
 *data schema*: `{agentId: string, avatarId: string}`
- 
- ## NFT
 
- ### createPurchase
+## NFT
+
+### createPurchase
 
  `oasis.NFT.createPurchase(data)`
  **params**
  *data schema*
+
  ```
  nftProvider: number,
       solanaExchange: {
@@ -769,12 +1226,15 @@ const data={
 ```
 
 ### getOlandPrice
+
 `oasis.NFT.createPurchase(count, couponCode)`
 
 ### purchaseOLAND
+
 `oasis.NFT.purchaseOLAND(data)`
 **params**
  *data schema*
+
  ```
  {
       olandId: "",
@@ -789,12 +1249,15 @@ const data={
 ## Solona
 
 ### mint
+
 `oasis.Solana.mint(data)`
 
 ### exchange
+
 `oasis.Solana.exchange(data)`
 **params**
-*data schema* 
+*data schema*
+
 ```
 {
       fromAccount: {
