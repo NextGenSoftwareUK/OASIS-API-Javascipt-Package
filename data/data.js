@@ -6,7 +6,26 @@ class Data {
     this.avatar = new Avatar();
   }
 
-  async loadHolon(data) {
+  async loadHolon(
+    data = {
+      providerType: "Ut ut",
+      setGlobally: false,
+      autoFailOverMode: "minim est",
+      autoReplicationMode: "in occaecat aliquip Ut",
+      autoLoadBalanceMode: "sit proident aute commodo",
+      autoFailOverProviders: "ex minim",
+      autoReplicationProviders: "in ut esse minim",
+      autoLoadBalanceProviders: "aute laborum aliqua",
+      waitForAutoReplicationResult: true,
+      showDetailedSettings: true,
+      recursive: true,
+      maxChildDepth: 34597336,
+      continueOnError: false,
+      version: 98949762,
+      loadChildren: true,
+      id: "7a88d429-6a1c-4c20-f5f4-f426c17fc40f",
+    }
+  ) {
     this.token = await this.avatar.callLogin();
     if (this.token === -1)
       return { error: true, data: { message: "You are not logged in!" } };
@@ -29,7 +48,7 @@ class Data {
       });
   }
 
-  async getLoadHolonById(id = "") {
+  async loadHolonById(id) {
     this.token = await this.avatar.callLogin();
     if (this.token === -1)
       return { error: true, data: { message: "You are not logged in!" } };
@@ -51,7 +70,7 @@ class Data {
       });
   }
 
-  async getHolonChildById(
+  async loadHolonQs(
     data = {
       id: "",
       loadChildren: true,
@@ -82,7 +101,7 @@ class Data {
       });
   }
 
-  async getHolonChildByIdAndSetGlobally(
+  async loadHolonQs2(
     data = {
       id: "",
       loadChildren: true,
@@ -115,7 +134,7 @@ class Data {
       });
   }
 
-  async getHolonChildByIdAndSetGloballyWithMoreOptions(
+  async loadHolonQs3(
     data = {
       id: "",
       loadChildren: true,
@@ -156,39 +175,38 @@ class Data {
       });
   }
 
-  async getLoadHolonById(id = "") {
-    this.token = await this.avatar.callLogin();
-    if (this.token === -1)
-      return { error: true, data: { message: "You are not logged in!" } };
-    const config = {
-      method: "get",
-      url: `https://api.oasisplatform.world/api/data/load-holon/${id}`,
-      headers: {
-        Authorization: `Bearer ${this.token.jwtToken}`,
-      },
-    };
+  // async getLoadHolonById(id = "") {
+  //   this.token = await this.avatar.callLogin();
+  //   if (this.token === -1)
+  //     return { error: true, data: { message: "You are not logged in!" } };
+  //   const config = {
+  //     method: "get",
+  //     url: `https://api.oasisplatform.world/api/data/load-holon/${id}`,
+  //     headers: {
+  //       Authorization: `Bearer ${this.token.jwtToken}`,
+  //     },
+  //   };
 
-    return axios(config)
-      .then(function (response) {
-        if (response.data.isError) return { error: true, data: response.data };
-        else return { error: false, data: response.data };
-      })
-      .catch(function (error) {
-        return { error: true, data: error };
-      });
-  }
+  //   return axios(config)
+  //     .then(function (response) {
+  //       if (response.data.isError) return { error: true, data: response.data };
+  //       else return { error: false, data: response.data };
+  //     })
+  //     .catch(function (error) {
+  //       return { error: true, data: error };
+  //     });
+  // }
 
-  async loadAllHolons(data) {
+  async loadAllHolons() {
     this.token = await this.avatar.callLogin();
     if (this.token === -1)
       return { error: true, data: { message: "You are not logged in!" } };
     const config = {
       method: "post",
-      url: `https://api.oasisplatform.world/api/data/load-all-holons`,
+      url: `https://api.oasisplatform.world/api/data/load-all-holons/all`,
       headers: {
         Authorization: `Bearer ${this.token.jwtToken}`,
       },
-      data: JSON.stringify(data)
     };
 
     return axios(config)
@@ -201,16 +219,36 @@ class Data {
       });
   }
 
-  async loadAllHolonsForGivenType(holonType) {
+  async loadAllHolonsForm(
+    data = {
+      HolonType: "Moon",
+      LoadChildren: true,
+      Recursive: true,
+      MaxChildDepth: 0,
+      ContinueOnError: false,
+      Version: 0,
+      ProviderType: "HoloOASIS",
+      SetGlobally: false,
+      ShowDetailedSettings: true,
+      AutoFailOverEnabled: "true",
+      AutoReplicationEnabled: "true",
+      AutoLoadBalanceEnabled: "true",
+      AutoFailOverProviders: "MongoDBOASIS, HoloOASOS",
+      AutoReplicationProviders: "MongoDBOASIS, HoloOASOS",
+      AutoLoadBalanceProviders: "MongoDBOASIS, HoloOASOS",
+      WaitForAutoReplicationResult: false,
+    }
+  ) {
     this.token = await this.avatar.callLogin();
     if (this.token === -1)
       return { error: true, data: { message: "You are not logged in!" } };
     const config = {
-      method: "get",
+      method: "post",
       url: `https://api.oasisplatform.world/api/data/load-all-holons/${holonType}`,
       headers: {
         Authorization: `Bearer ${this.token.jwtToken}`,
       },
+      data: JSON.stringify(data),
     };
 
     return axios(config)
@@ -223,22 +261,13 @@ class Data {
       });
   }
 
-  async getHolonChildByHolonType(
-    data = {
-      holonType: "",
-      loadChildren: true,
-      recursive: true,
-      maxChildDepth: 0,
-      continueOnError: true,
-      version: 0,
-    }
-  ) {
+  async loadHolonsParent(id) {
     this.token = await this.avatar.callLogin();
     if (this.token === -1)
       return { error: true, data: { message: "You are not logged in!" } };
     const config = {
       method: "get",
-      url: `https://api.oasisplatform.world/api/data/load-holon/${data.holonType}/${data.loadChildren}/${data.recursive}/${data.maxChildDepth}/${data.continueOnError}/${data.version}`,
+      url: `https://api.oasisplatform.world/api/data/load-holons-for-parent/${id}/all`,
       headers: {
         Authorization: `Bearer ${this.token.jwtToken}`,
       },
@@ -254,82 +283,30 @@ class Data {
       });
   }
 
-  async getHolonChildByHolonTypeAndSetGlobally(
+  async loadHolonParentForm(
     data = {
-      holonType: "",
-      loadChildren: true,
-      recursive: true,
-      maxChildDepth: 0,
-      continueOnError: true,
-      version: 0,
-      providerType: "",
-      setGlobally: true,
+      Id: null,
+      HolonType: "Moon",
+      LoadChildren: true,
+      Recursive: true,
+      MaxChildDepth: 0,
+      ContinueOnError: false,
+      Version: 0,
+      ProviderType: "HoloOASIS",
+      SetGlobally: false,
+      ShowDetailedSettings: true,
+      AutoFailOverEnabled: "true",
+      AutoReplicationEnabled: "true",
+      AutoLoadBalanceEnabled: "true",
+      AutoFailOverProviders: "MongoDBOASIS, HoloOASOS",
+      AutoReplicationProviders: "MongoDBOASIS, HoloOASOS",
+      AutoLoadBalanceProviders: "MongoDBOASIS, HoloOASOS",
+      WaitForAutoReplicationResult: false,
     }
   ) {
     this.token = await this.avatar.callLogin();
-    if (this.token === -1)
-      return { error: true, data: { message: "You are not logged in!" } };
-    const config = {
-      method: "get",
-      url: `https://api.oasisplatform.world/api/data/load-holon/${data.holonType}/${data.loadChildren}/${data.recursive}/${data.maxChildDepth}/${data.continueOnError}/${data.version}/${data.providerType}/${data.setGlobally}`,
-      headers: {
-        Authorization: `Bearer ${this.token.jwtToken}`,
-      },
-    };
-
-    return axios(config)
-      .then(function (response) {
-        if (response.data.isError) return { error: true, data: response.data };
-        else return { error: false, data: response.data };
-      })
-      .catch(function (error) {
-        return { error: true, data: error };
-      });
-  }
-
-  async getHolonChildByHolonTypeAndSetGloballyWithMoreOptions(
-    data = {
-      holonType: "",
-      loadChildren: true,
-      recursive: true,
-      maxChildDepth: 0,
-      continueOnError: true,
-      version: 0,
-      providerType: "",
-      setGlobally: true,
-      autoReplicationMode: "",
-      autoFailOverMode: "",
-      autoLoadBalanceMode: "",
-      autoReplicationProviders: "",
-      autoFailOverProviders: "",
-      autoLoadBalanceProviders: "",
-      waitForAutoReplicationResult: "",
-      showDetailedSetting: "",
-    }
-  ) {
-    this.token = await this.avatar.callLogin();
-    if (this.token === -1)
-      return { error: true, data: { message: "You are not logged in!" } };
-    const config = {
-      method: "get",
-      url: `https://api.oasisplatform.world/api/data/load-holon/${data.holonType}/${data.loadChildren}/${data.recursive}/${data.maxChildDepth}/${data.continueOnError}/${data.version}/${data.providerType}/${data.setGlobally}/${data.autoReplicationMode}/${data.autoFailOverMode}/${data.autoLoadBalanceMode}/${data.autoReplicationProviders}/${data.autoFailOverProviders}/${data.autoLoadBalanceProviders}/${data.waitForAutoReplicationResult}/${data.showDetailedSetting}`,
-      headers: {
-        Authorization: `Bearer ${this.token.jwtToken}`,
-      },
-    };
-
-    return axios(config)
-      .then(function (response) {
-        if (response.data.isError) return { error: true, data: response.data };
-        else return { error: false, data: response.data };
-      })
-      .catch(function (error) {
-        return { error: true, data: error };
-      });
-  }
-
-  async loadHolonForParent(data) {
-    this.token = await this.avatar.callLogin();
+    if (data.id == null)
+      return { error: true, data: { message: "id is null" } };
     if (this.token === -1)
       return { error: true, data: { message: "You are not logged in!" } };
     const config = {
@@ -338,7 +315,7 @@ class Data {
       headers: {
         Authorization: `Bearer ${this.token.jwtToken}`,
       },
-      data: JSON.stringify(data)
+      data: JSON.stringify(data),
     };
 
     return axios(config)
@@ -351,32 +328,8 @@ class Data {
       });
   }
 
-  async getLoadHolonParentByIdAndType(data={
-    id: "",
-    holonType: ""
-  }) {
-    this.token = await this.avatar.callLogin();
-    if (this.token === -1)
-      return { error: true, data: { message: "You are not logged in!" } };
-    const config = {
-      method: "get",
-      url: `https://api.oasisplatform.world/api/data/load-holons-for-parent/${data.id}/${data.holonType}`,
-      headers: {
-        Authorization: `Bearer ${this.token.jwtToken}`,
-      },
-    };
 
-    return axios(config)
-      .then(function (response) {
-        if (response.data.isError) return { error: true, data: response.data };
-        else return { error: false, data: response.data };
-      })
-      .catch(function (error) {
-        return { error: true, data: error };
-      });
-  }
-
-  async getHolonParent(
+  async loadHolonParentQs1(
     data = {
       id: "",
       holonType: "",
@@ -408,7 +361,7 @@ class Data {
       });
   }
 
-  async getHolonParentAndSetGlobally(
+  async loadHolonParentQs2(
     data = {
       id: "",
       holonType: "",
@@ -442,7 +395,7 @@ class Data {
       });
   }
 
-  async getHolonParenteAndSetGloballyWithMoreOptions(
+  async loadHolonParentQs3(
     data = {
       id: "",
       holonType: "",
@@ -508,135 +461,7 @@ class Data {
       });
   }
 
-  async saveHolonByObj(holon="", data) {
-    data = JSON.stringify(data);
-    this.token = await this.avatar.callLogin();
-    if (this.token === -1)
-      return { error: true, data: { message: "You are not logged in!" } };
-    const config = {
-      method: "post",
-      url: `https://api.oasisplatform.world/api/data/save-holon/${holon}`,
-      headers: {
-        Authorization: `Bearer ${this.token.jwtToken}`,
-      },
-      data,
-    };
-
-    return axios(config)
-      .then(function (response) {
-        if (response.data.isError) return { error: true, data: response.data };
-        else return { error: false, data: response.data };
-      })
-      .catch(function (error) {
-        return { error: true, data: error };
-      });
-  }
-
-  async saveHolonWithParams(
-    params = {
-      saveChildren: true,
-      recursive: true,
-      maxChildDepth: 0,
-      continueOnError: true,
-    }, data
-  ) {
-    this.token = await this.avatar.callLogin();
-    if (this.token === -1)
-      return { error: true, data: { message: "You are not logged in!" } };
-      data = JSON.stringify(data);
-    const config = {
-      method: "post",
-      url: `https://api.oasisplatform.world/api/data/save-holon/${params.saveChildren}/${params.recursive}/${params.maxChildDepth}/${params.continueOnError}`,
-      headers: {
-        Authorization: `Bearer ${this.token.jwtToken}`,
-      },
-      data
-    };
-
-    return axios(config)
-      .then(function (response) {
-        if (response.data.isError) return { error: true, data: response.data };
-        else return { error: false, data: response.data };
-      })
-      .catch(function (error) {
-        return { error: true, data: error };
-      });
-  }
-
-  async saveHolonAndSetGlobally(
-    params = {
-      saveChildren: true,
-      recursive: true,
-      maxChildDepth: 0,
-      continueOnError: true,
-      providerType: "",
-      setGlobally: true,
-    }, data
-  ) {
-    this.token = await this.avatar.callLogin();
-    if (this.token === -1)
-      return { error: true, data: { message: "You are not logged in!" } };
-    data = JSON.stringify(data);
-    const config = {
-      method: "post",
-      url: `https://api.oasisplatform.world/api/data/save-holon/${params.saveChildren}/${params.recursive}/${params.maxChildDepth}/${params.continueOnError}/${params.providerType}/${params.setGlobally}`,
-      headers: {
-        Authorization: `Bearer ${this.token.jwtToken}`,
-      },
-      data
-    };
-
-    return axios(config)
-      .then(function (response) {
-        if (response.data.isError) return { error: true, data: response.data };
-        else return { error: false, data: response.data };
-      })
-      .catch(function (error) {
-        return { error: true, data: error };
-      });
-  }
-
-  async saveHolonAndSetGloballyWithMoreOptions(
-    params = {
-      saveChildren: true,
-      recursive: true,
-      maxChildDepth: 0,
-      continueOnError: true,
-      providerType: "",
-      setGlobally: true,
-      autoReplicationMode: "",
-      autoFailOverMode: "",
-      autoLoadBalanceMode: "",
-      autoReplicationProviders: "",
-      autoFailOverProviders: "",
-      autoLoadBalanceProviders: "",
-      waitForAutoReplicationResult: "",
-      showDetailedSetting: "",
-    }, data
-  ) {
-    this.token = await this.avatar.callLogin();
-    if (this.token === -1)
-      return { error: true, data: { message: "You are not logged in!" } };
-    data = JSON.stringify(data);
-    const config = {
-      method: "post",
-      url: `https://api.oasisplatform.world/api/data/save-holon/${params.loadChildren}/${params.recursive}/${params.maxChildDepth}/${params.continueOnError}/${params.providerType}/${params.setGlobally}/${params.autoReplicationMode}/${params.autoFailOverMode}/${params.autoLoadBalanceMode}/${params.autoReplicationProviders}/${params.autoFailOverProviders}/${params.autoLoadBalanceProviders}/${params.waitForAutoReplicationResult}/${params.showDetailedSetting}`,
-      headers: {
-        Authorization: `Bearer ${this.token.jwtToken}`,
-      },
-      data
-    };
-
-    return axios(config)
-      .then(function (response) {
-        if (response.data.isError) return { error: true, data: response.data };
-        else return { error: false, data: response.data };
-      })
-      .catch(function (error) {
-        return { error: true, data: error };
-      });
-  }
-
+  
   async saveHolonOffChain(data) {
     data = JSON.stringify(data);
     this.token = await this.avatar.callLogin();
@@ -661,10 +486,12 @@ class Data {
       });
   }
 
-  async deleteHolon(data={
-    id: "",
-    softDelete: true
-  }) {
+  async deleteHolon(
+    data = {
+      id: "",
+      softDelete: true,
+    }
+  ) {
     this.token = await this.avatar.callLogin();
     if (this.token === -1)
       return { error: true, data: { message: "You are not logged in!" } };

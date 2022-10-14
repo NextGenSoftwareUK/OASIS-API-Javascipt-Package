@@ -660,20 +660,20 @@ Load's a holon data object for the given id.
 
 ```js
 const data = new oasis.Data()
-data.getLoadHolonById(id=1).then(()=>{
+data.getLoadHolonById(id).then(()=>{
   //pass
 }).catch((err)=>{
   // pass
 })
 ```
 
-### getHolonChildById
+### loadHolonQs
 
 Load's a holon data object for the given id. Set the loadChildren flag to true to load all the holon's child holon's. This defaults to true. If loadChildren is set to true, you can set the Recursive flag to true to load all the child's holon's recursively, or false to only load the first level of child holon's. This defaults to true. If loadChildren is set to true, you can set the maxChildDepth value to a custom int of how many levels down you wish to load, it defaults to 0, which means it will load to infinite depth. Set the continueOnError flag to true if you wish it to continue loading child holon's even if an error has occured, this defaults to true. Set the Version int to the version of the holon you wish to load (defaults to 0) which means the latest version.
 
 ```js
 const data = new oasis.Data()
-data.getHolonChildById(data = {
+data.loadHolonQs(data = {
     id: "",
     loadChildren: true,
     recursive: true,
@@ -687,13 +687,13 @@ data.getHolonChildById(data = {
 })
 ```
 
-### getHolonChildByIdAndSetGlobally
+### loadHolonQs2
 
 Load's a holon data object for the given id. Set the loadChildren flag to true to load all the holon's child holon's. This defaults to true. If loadChildren is set to true, you can set the Recursive flag to true to load all the child's holon's recursively, or false to only load the first level of child holon's. This defaults to true. If loadChildren is set to true, you can set the maxChildDepth value to a custom int of how many levels down you wish to load, it defaults to 0, which means it will load to infinite depth. Set the continueOnError flag to true if you wish it to continue loading child holon's even if an error has occured, this defaults to true. Set the Version int to the version of the holon you wish to load (defaults to 0) which means the latest version. Pass in the provider you wish to use. Set the setglobally flag to false to use these settings only for this request or true for it to be used for all future requests.
 
 ```js
 const data = new oasis.Data()
-data.getHolonChildByIdAndSetGlobally(data = {
+data.loadHolonQs2(data = {
     id: "",
     loadChildren: true,
     recursive: true,
@@ -709,13 +709,13 @@ data.getHolonChildByIdAndSetGlobally(data = {
 })
 ```
 
-### getHolonChildByIdAndSetGloballyWithMoreOptions
+### loadHolonQs3
 
 Load's a holon data object for the given id. Set the loadChildren flag to true to load all the holon's child holon's. This defaults to true. If loadChildren is set to true, you can set the Recursive flag to true to load all the child's holon's recursively, or false to only load the first level of child holon's. This defaults to true. If loadChildren is set to true, you can set the maxChildDepth value to a custom int of how many levels down you wish to load, it defaults to 0, which means it will load to infinite depth. Set the continueOnError flag to true if you wish it to continue loading child holon's even if an error has occured, this defaults to true. Set the Version int to the version of the holon you wish to load (defaults to 0) which means the latest version. Pass in the provider you wish to use. Set the autoFailOverMode to 'ON' if you wish this call to work through the the providers in the auto-failover list until it succeeds. Set it to OFF if you do not or to 'DEFAULT' to default to the global OASISDNA setting. Set the autoReplicationMode to 'ON' if you wish this call to auto-replicate to the providers in the auto-replication list. Set it to OFF if you do not or to UseGlobalDefaultInOASISDNA to 'DEFAULT' to the global OASISDNA setting. Set the autoLoadBalanceMode to 'ON' if you wish this call to use the fastest provider in your area from the auto-loadbalance list. Set it to OFF if you do not or to UseGlobalDefaultInOASISDNA to 'DEFAULT' to the global OASISDNA setting. Set the waitForAutoReplicationResult flag to true if you wish for the API to wait for the auto-replication to complete before returning the results. Set the setglobally flag to false to use these settings only for this request or true for it to be used for all future requests. Set the showDetailedSettings flag to true to view detailed settings such as the list of providers in the auto-failover, auto-replication & auto-load balance lists.
 
 ```js
 const data = new oasis.Data()
-data.getHolonChildByIdAndSetGloballyWithMoreOptions(data = {
+data.loadHolonQs3(data = {
     id: "",
     loadChildren: true,
     recursive: true,
@@ -745,24 +745,35 @@ Load's all holons for the given HolonType. Use 'All' to load all holons. Set the
 
 ```js
 const data = new oasis.Data()
-data.loadAllHolons({
-  "providerType": "string",
-  "setGlobally": true,
-  "autoFailOverMode": "string",
-  "autoReplicationMode": "string",
-  "autoLoadBalanceMode": "string",
-  "autoFailOverProviders": "string",
-  "autoReplicationProviders": "string",
-  "autoLoadBalanceProviders": "string",
-  "waitForAutoReplicationResult": true,
-  "showDetailedSettings": true,
-  "recursive": true,
-  "maxChildDepth": 0,
-  "continueOnError": true,
-  "version": 0,
-  "loadChildren": true,
-  "holonType": "string"
-}).then(()=>{
+data.loadAllHolons().then(()=>{
+  //pass
+}).catch((err)=>{
+  // pass
+})
+```
+
+### loadAllHolonsForm
+
+```js
+const data = new oasis.Data()
+data.loadAllHolonsForm({
+      HolonType: "Moon",
+      LoadChildren: true,
+      Recursive: true,
+      MaxChildDepth: 0,
+      ContinueOnError: false,
+      Version: 0,
+      ProviderType: "HoloOASIS",
+      SetGlobally: false,
+      ShowDetailedSettings: true,
+      AutoFailOverEnabled: "true",
+      AutoReplicationEnabled: "true",
+      AutoLoadBalanceEnabled: "true",
+      AutoFailOverProviders: "MongoDBOASIS, HoloOASOS",
+      AutoReplicationProviders: "MongoDBOASIS, HoloOASOS",
+      AutoLoadBalanceProviders: "MongoDBOASIS, HoloOASOS",
+      WaitForAutoReplicationResult: false,
+    }).then(()=>{
   //pass
 }).catch((err)=>{
   // pass
@@ -782,13 +793,13 @@ data.loadAllHolonsForGivenType(holonType).then(()=>{
 })
 ```
 
-### getHolonChildByHolonType
+### loadHolonQs1
 
 Load's all holons for the given HolonType. Use 'All' to load all holons. Set the loadChildren flag to true to load all the holon's child holon's. This defaults to true. If loadChildren is set to true, you can set the Recursive flag to true to load all the child's holon's recursively, or false to only load the first level of child holon's. This defaults to true. If loadChildren is set to true, you can set the maxChildDepth value to a custom int of how many levels down you wish to load, it defaults to 0, which means it will load to infinite depth. Set the continueOnError flag to true if you wish it to continue loading child holon's even if an error has occured, this defaults to true. Set the Version int to the version of the holon you wish to load (defaults to 0) which means the latest version.
 
 ```js
 const data = new oasis.Data()
-data.getHolonChildByHolonType(
+data.loadHolonQs1(
   {
       holonType: "",
       loadChildren: true,
@@ -804,13 +815,13 @@ data.getHolonChildByHolonType(
 })
 ```
 
-### getHolonChildByHolonTypeAndSetGlobally
+### loadHolonQs2
 
 Load's all holons for the given HolonType. Use 'All' to load all holons. Set the loadChildren flag to true to load all the holon's child holon's. This defaults to true. If loadChildren is set to true, you can set the Recursive flag to true to load all the child's holon's recursively, or false to only load the first level of child holon's. This defaults to true. If loadChildren is set to true, you can set the maxChildDepth value to a custom int of how many levels down you wish to load, it defaults to 0, which means it will load to infinite depth. Set the continueOnError flag to true if you wish it to continue loading child holon's even if an error has occured, this defaults to true. Set the Version int to the version of the holon you wish to load (defaults to 0) which means the latest version. Pass in the provider you wish to use. Set the setglobally flag to false to use these settings only for this request or true for it to be used for all future requests.
 
 ```js
 const data = new oasis.Data()
-data.getHolonChildByHolonTypeAndSetGlobally(
+data.loadHolonQs2(
   {
       holonType: "",
       loadChildren: true,
@@ -828,13 +839,13 @@ data.getHolonChildByHolonTypeAndSetGlobally(
 })
 ```
 
-### getHolonChildByHolonTypeAndSetGloballyWithMoreOptions
+### loadHolonQs3
 
 Load's all holons for the given HolonType. Use 'All' to load all holons. Set the loadChildren flag to true to load all the holon's child holon's. This defaults to true. If loadChildren is set to true, you can set the Recursive flag to true to load all the child's holon's recursively, or false to only load the first level of child holon's. This defaults to true. If loadChildren is set to true, you can set the maxChildDepth value to a custom int of how many levels down you wish to load, it defaults to 0, which means it will load to infinite depth. Set the continueOnError flag to true if you wish it to continue loading child holon's even if an error has occured, this defaults to true. Set the Version int to the version of the holon you wish to load (defaults to 0) which means the latest version. Pass in the provider you wish to use. Set the autoFailOverMode to 'ON' if you wish this call to work through the the providers in the auto-failover list until it succeeds. Set it to OFF if you do not or to 'DEFAULT' to default to the global OASISDNA setting. Set the autoReplicationMode to 'ON' if you wish this call to auto-replicate to the providers in the auto-replication list. Set it to OFF if you do not or to UseGlobalDefaultInOASISDNA to 'DEFAULT' to the global OASISDNA setting. Set the autoLoadBalanceMode to 'ON' if you wish this call to use the fastest provider in your area from the auto-loadbalance list. Set it to OFF if you do not or to UseGlobalDefaultInOASISDNA to 'DEFAULT' to the global OASISDNA setting. Set the waitForAutoReplicationResult flag to true if you wish for the API to wait for the auto-replication to complete before returning the results. Set the setglobally flag to false to use these settings only for this request or true for it to be used for all future requests. Set the showDetailedSettings flag to true to view detailed settings such as the list of providers in the auto-failover, auto-replication & auto-load balance lists.
 
 ```js
 const data = new oasis.Data()
-data.getHolonChildByHolonTypeAndSetGloballyWithMoreOptions(
+data.loadHolonQs3(
   {
       holonType: "",
       loadChildren: true,
@@ -893,29 +904,55 @@ data.loadHolonForParent(
 })
 ```
 
-### getLoadHolonParentByIdAndType
+### loadHolonsParent
 
 Load's all holons for the given parent and the given HolonType. Use 'All' to load all holons.
 
 ```js
 const data = new oasis.Data()
-data.getLoadHolonParentByIdAndType({
-  id: "",
-  holonType: ""
-}).then(()=>{
+data.loadHolonsParent(id).then(()=>{
   //pass
 }).catch((err)=>{
   // pass
 })
 ```
 
-### getHolonParent
+### loadHolonParentForm
+
+```js
+const data = new oasis.Data()
+data.loadHolonParentForm({
+      Id: null,
+      HolonType: "Moon",
+      LoadChildren: true,
+      Recursive: true,
+      MaxChildDepth: 0,
+      ContinueOnError: false,
+      Version: 0,
+      ProviderType: "HoloOASIS",
+      SetGlobally: false,
+      ShowDetailedSettings: true,
+      AutoFailOverEnabled: "true",
+      AutoReplicationEnabled: "true",
+      AutoLoadBalanceEnabled: "true",
+      AutoFailOverProviders: "MongoDBOASIS, HoloOASOS",
+      AutoReplicationProviders: "MongoDBOASIS, HoloOASOS",
+      AutoLoadBalanceProviders: "MongoDBOASIS, HoloOASOS",
+      WaitForAutoReplicationResult: false,
+    }).then(()=>{
+  //pass
+}).catch((err)=>{
+  // pass
+})
+```
+
+### loadHolonParentQs1
 
 Load's all holons for the given parent and the given HolonType. Use 'All' to load all holons. Set the loadChildren flag to true to load all the holon's child holon's. This defaults to true. If loadChildren is set to true, you can set the Recursive flag to true to load all the child's holon's recursively, or false to only load the first level of child holon's. This defaults to true. If loadChildren is set to true, you can set the maxChildDepth value to a custom int of how many levels down you wish to load, it defaults to 0, which means it will load to infinite depth. Set the continueOnError flag to true if you wish it to continue loading child holon's even if an error has occured, this defaults to true. Set the Version int to the version of the holon you wish to load (defaults to 0) which means the latest version.
 
 ```js
 const data = new oasis.Data()
-data.getHolonParent({
+data.loadHolonParentQs1({
       id: "",
       holonType: "",
       loadChildren: true,
@@ -930,13 +967,13 @@ data.getHolonParent({
 })
 ```
 
-### getHolonParentAndSetGlobally
+### loadHolonParentQs2
 
 Load's all holons for the given parent and the given HolonType. Use 'All' to load all holons. Set the loadChildren flag to true to load all the holon's child holon's. This defaults to true. If loadChildren is set to true, you can set the Recursive flag to true to load all the child's holon's recursively, or false to only load the first level of child holon's. This defaults to true. If loadChildren is set to true, you can set the maxChildDepth value to a custom int of how many levels down you wish to load, it defaults to 0, which means it will load to infinite depth. Set the continueOnError flag to true if you wish it to continue loading child holon's even if an error has occured, this defaults to true. Set the Version int to the version of the holon you wish to load (defaults to 0) which means the latest version. Pass in the provider you wish to use. Set the setglobally flag to false to use these settings only for this request or true for it to be used for all future requests.
 
 ```js
 const data = new oasis.Data()
-data.getHolonParentAndSetGlobally({
+data.loadHolonParentQs2({
       id: "",
       holonType: "",
       loadChildren: true,
@@ -953,13 +990,13 @@ data.getHolonParentAndSetGlobally({
 })
 ```
 
-### getHolonParenteAndSetGloballyWithMoreOptions
+### loadHolonParentQs3
 
 Load's all holons for the given parent and the given HolonType. Use 'All' to load all holons. Set the loadChildren flag to true to load all the holon's child holon's. This defaults to true. If loadChildren is set to true, you can set the Recursive flag to true to load all the child's holon's recursively, or false to only load the first level of child holon's. This defaults to true. If loadChildren is set to true, you can set the maxChildDepth value to a custom int of how many levels down you wish to load, it defaults to 0, which means it will load to infinite depth. Set the continueOnError flag to true if you wish it to continue loading child holon's even if an error has occured, this defaults to true. Set the Version int to the version of the holon you wish to load (defaults to 0) which means the latest version. Pass in the provider you wish to use. Set the autoFailOverMode to 'ON' if you wish this call to work through the the providers in the auto-failover list until it succeeds. Set it to OFF if you do not or to 'DEFAULT' to default to the global OASISDNA setting. Set the autoReplicationMode to 'ON' if you wish this call to auto-replicate to the providers in the auto-replication list. Set it to OFF if you do not or to UseGlobalDefaultInOASISDNA to 'DEFAULT' to the global OASISDNA setting. Set the autoLoadBalanceMode to 'ON' if you wish this call to use the fastest provider in your area from the auto-loadbalance list. Set it to OFF if you do not or to UseGlobalDefaultInOASISDNA to 'DEFAULT' to the global OASISDNA setting. Set the waitForAutoReplicationResult flag to true if you wish for the API to wait for the auto-replication to complete before returning the results. Set the setglobally flag to false to use these settings only for this request or true for it to be used for all future requests. Set the showDetailedSettings flag to true to view detailed settings such as the list of providers in the auto-failover, auto-replication & auto-load balance lists.
 
 ```js
 const data = new oasis.Data()
-data.getHolonParenteAndSetGloballyWithMoreOptions({
+data.loadHolonParentQs3({
       id: "",
       holonType: "",
       loadChildren: true,
@@ -991,85 +1028,6 @@ Save's a holon data object. Set the saveChildren flag to true to save all the ho
 ```js
 const data = new oasis.Data()
 data.saveHolon(data).then(()=>{
-  //pass
-}).catch((err)=>{
-  // pass
-})
-```
-
-### saveHolonByObj
-
-Save's a holon data object.
-
-```js
-const data = new oasis.Data()
-data.saveHolonByObj(holon, data).then(()=>{
-  //pass
-}).catch((err)=>{
-  // pass
-})
-```
-
-### saveHolonWithParams
-
-Save's a holon data object. Set the saveChildren flag to true to save all the holon's child holon's. This defaults to true. If saveChildren is set to true, you can set the Recursive flag to true to save all the child's holon's recursively, or false to only save the first level of child holon's. This defaults to true. If saveChildren is set to true, you can set the maxChildDepth value to a custom int of how many levels down you wish to save, it defaults to 0, which means it will save to infinite depth. Set the continueOnError flag to true if you wish it to continue saving child holon's even if an error has occured, this defaults to true.
-
-```js
-const data = new oasis.Data()
-data.saveHolonWithParams({
-      saveChildren: true,
-      recursive: true,
-      maxChildDepth: 0,
-      continueOnError: true,
-    }, data).then(()=>{
-  //pass
-}).catch((err)=>{
-  // pass
-})
-```
-
-### saveHolonAndSetGlobally
-
-Save's a holon data object. Set the saveChildren flag to true to save all the holon's child holon's. This defaults to true. If saveChildren is set to true, you can set the Recursive flag to true to save all the child's holon's recursively, or false to only save the first level of child holon's. This defaults to true. If saveChildren is set to true, you can set the maxChildDepth value to a custom int of how many levels down you wish to save, it defaults to 0, which means it will save to infinite depth. Set the continueOnError flag to true if you wish it to continue saving child holon's even if an error has occured, this defaults to true. Pass in the provider you wish to use. Set the setglobally flag to false to use these settings only for this request or true for it to be used for all future requests.
-
-```js
-const data = new oasis.Data()
-data.saveHolonAndSetGlobally({
-      saveChildren: true,
-      recursive: true,
-      maxChildDepth: 0,
-      continueOnError: true,
-      providerType: "",
-      setGlobally: true,
-    }, data).then(()=>{
-  //pass
-}).catch((err)=>{
-  // pass
-})
-```
-
-### saveHolonAndSetGloballyWithMoreOptions
-
-Save's a holon data object. Set the saveChildren flag to true to save all the holon's child holon's. This defaults to true. If saveChildren is set to true, you can set the Recursive flag to true to save all the child's holon's recursively, or false to only save the first level of child holon's. This defaults to true. If saveChildren is set to true, you can set the maxChildDepth value to a custom int of how many levels down you wish to save, it defaults to 0, which means it will save to infinite depth. Set the continueOnError flag to true if you wish it to continue saving child holon's even if an error has occured, this defaults to true. Pass in the provider you wish to use. Set the autoFailOverMode to 'ON' if you wish this call to work through the the providers in the auto-failover list until it succeeds. Set it to OFF if you do not or to 'DEFAULT' to default to the global OASISDNA setting. Set the autoReplicationMode to 'ON' if you wish this call to auto-replicate to the providers in the auto-replication list. Set it to OFF if you do not or to UseGlobalDefaultInOASISDNA to 'DEFAULT' to the global OASISDNA setting. Set the autoLoadBalanceMode to 'ON' if you wish this call to use the fastest provider in your area from the auto-loadbalance list. Set it to OFF if you do not or to UseGlobalDefaultInOASISDNA to 'DEFAULT' to the global OASISDNA setting. Set the waitForAutoReplicationResult flag to true if you wish for the API to wait for the auto-replication to complete before returning the results. Set the setglobally flag to false to use these settings only for this request or true for it to be used for all future requests. Set the showDetailedSettings flag to true to view detailed settings such as the list of providers in the auto-failover, auto-replication & auto-load balance lists.
-
-```js
-const data = new oasis.Data()
-data.saveHolonAndSetGloballyWithMoreOptions({
-      saveChildren: true,
-      recursive: true,
-      maxChildDepth: 0,
-      continueOnError: true,
-      providerType: "",
-      setGlobally: true,
-      autoReplicationMode: "",
-      autoFailOverMode: "",
-      autoLoadBalanceMode: "",
-      autoReplicationProviders: "",
-      autoFailOverProviders: "",
-      autoLoadBalanceProviders: "",
-      waitForAutoReplicationResult: "",
-      showDetailedSetting: "",
-    }, data).then(()=>{
   //pass
 }).catch((err)=>{
   // pass
