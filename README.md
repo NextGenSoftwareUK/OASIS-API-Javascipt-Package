@@ -340,7 +340,7 @@ Check out more info below:<br><br>
 
 ### Javascript
 
-<https://www.npmjs.com/package/oasis-api> \
+<https://www.npmjs.com/package/web4-oasis-api> \
 <https://github.com/NextGenSoftwareUK/OASIS-API-Javascipt-Package>
 
 ### Unity
@@ -414,25 +414,25 @@ Each function call you make returns a promise of an object which is in this form
 
 To get started with this package run
 
-`npm install oasis-api`
+`npm install web4-oasis-api`
 
 This installs the package to your project.
 To use it in the Application, it can be imported by
 
-`import oasis from "oasis-api"`
+`import oasis from "web4-oasis-api"`
 
 ## Auth
 
-The Auth class handles the authentication of the oasis-api. It can be imported by:
+The Auth class handles the authentication of the web4-oasis-api. It can be imported by:
 
-`import { Auth } from "oasis-api"`
+`import { Auth } from "web4-oasis-api"`
 
 ### Login
 
 To login use this code:
 
 ```javascript
-import { Auth } from "oasis-api";
+import { Auth } from "web4-oasis-api";
 
 const oasisAuth = new Auth();
 
@@ -454,7 +454,7 @@ oasisAuth.login({
 For signup, use this code snippet:
 
 ```javascript
-import { Auth } from "oasis-api";
+import { Auth } from "web4-oasis-api";
 
 const oasisAuth = new Auth();
 
@@ -475,7 +475,7 @@ const data = await OasisAuth.signup({
 This logs a user out and revokes his token
 
 ```javascript
-import { Auth } from "oasis-api";
+import { Auth } from "web4-oasis-api";
 
 const oasisAuth = new Auth();
 
@@ -485,7 +485,7 @@ const data = await OasisAuth.logout();
 ### Forgot password
 
 ```javascript
-import { Auth } from "oasis-api";
+import { Auth } from "web4-oasis-api";
 
 const oasisAuth = new Auth();
 
@@ -498,7 +498,7 @@ This function is used when trying to get a currently logged in user.
 Code snippet:
 
 ```javascript
-import { Auth } from "oasis-api";
+import { Auth } from "web4-oasis-api";
 
 const oasisAuth = new Auth();
 
@@ -510,7 +510,7 @@ const data = await OasisAuth.getUser();
 This class manages a user's avatar from adding Karma, deleting and updating avatar, etc,
 
 ```js
-import { Avatar } from "oasis-api"
+import { Avatar } from "web4-oasis-api"
 ```
 
 ### get
@@ -518,7 +518,7 @@ import { Avatar } from "oasis-api"
 This function gets an avatar when its ID is provided
 
 ```js
-import { Avatar } from "oasis-api";
+import { Avatar } from "web4-oasis-api";
 const avatar = new Avatar();
 
 const res = await avatar.get();
@@ -529,7 +529,7 @@ const res = await avatar.get();
 This function returns all registered avatars
 
 ```js
-import { Avatar } from "oasis-api";
+import { Avatar } from "web4-oasis-api";
 const avatar = new Avatar();
 
 const res = await avatar.getAll();
