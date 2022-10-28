@@ -1,6 +1,6 @@
 {
   "name": "web4-oasis-api",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A JavaScript proxy for the WEB4 OASIS API. To be used only in the browser.",
   "main": "index.js",
   "repository": {
