@@ -214,25 +214,7 @@ class Data {
         .catch(function (error) {
           return { error: true, data: error };
         });
-    } else if (data === undefined) {
-      const config = {
-        method: "get",
-        url: `https://api.oasisplatform.world/api/data/load-holons-for-parent/all`,
-        headers: {
-          Authorization: `Bearer ${this.token.jwtToken}`,
-        },
-      };
-
-      return axios(config)
-        .then(function (response) {
-          if (response.data.isError)
-            return { error: true, data: response.data };
-          else return { error: false, data: response.data };
-        })
-        .catch(function (error) {
-          return { error: true, data: error };
-        });
-    }
+    } 
   }
 
   async saveHolon(data) {
