@@ -132,6 +132,26 @@ class Data {
         return { error: true, data: error };
       });
     }
+
+    else if (typeof data === "string") {
+      const config = {
+        method: "get",
+        url: `https://api.oasisplatform.world/api/data/load-all-holons/${data}`,
+        headers: {
+          Authorization: `Bearer ${this.token.jwtToken}`,
+        },
+      };
+
+      return axios(config)
+        .then(function (response) {
+          if (response.data.isError)
+            return { error: true, data: response.data };
+          else return { error: false, data: response.data };
+        })
+        .catch(function (error) {
+          return { error: true, data: error };
+        });
+    }
   }
 
   async loadHolonsForParent(
