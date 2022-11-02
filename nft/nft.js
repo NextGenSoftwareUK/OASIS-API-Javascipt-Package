@@ -6,6 +6,17 @@ class NFT {
     this.avatar = new Avatar();
   }
 
+  _returnState(config) {
+    return axios(config)
+      .then(function (response) {
+        if (response.data.isError) return { error: true, data: response.data };
+        else return { error: false, data: response.data };
+      })
+      .catch(function (error) {
+        return { error: true, data: error };
+      });
+  }
+
   async createPurchase(
     data = {
       nftProvider: 1,
@@ -42,16 +53,7 @@ class NFT {
       data,
     };
 
-    return axios(config)
-      .then((response) => {
-        if (response.data.isError) {
-          return { error: true, data: response.data };
-        }
-        return { error: false, data: response.data };
-      })
-      .catch((err) => {
-        return { error: true, data: err };
-      });
+    return this._returnState(config)
   }
 
   async getOlandPrice(count = 0, couponCode = 0) {
@@ -68,16 +70,7 @@ class NFT {
       },
     };
 
-    return axios(config)
-      .then((response) => {
-        if (response.data.isError) {
-          return { error: true, data: response.data };
-        }
-        return { error: false, data: response.data };
-      })
-      .catch((err) => {
-        return { error: true, data: err };
-      });
+    return this._returnState(config)
   }
 
   async purchaseOLAND(
@@ -101,16 +94,7 @@ class NFT {
       data,
     };
 
-    return axios(config)
-      .then((response) => {
-        if (response.data.isError) {
-          return { error: true, data: response.data };
-        }
-        return { error: false, data: response.data };
-      })
-      .catch((err) => {
-        return { error: true, data: err };
-      });
+    return this._returnState(config)
   }
 }
 

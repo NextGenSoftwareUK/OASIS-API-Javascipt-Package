@@ -6,6 +6,17 @@ class Data {
     this.avatar = new Avatar();
   }
 
+  _returnState(config) {
+    return axios(config)
+      .then(function (response) {
+        if (response.data.isError) return { error: true, data: response.data };
+        else return { error: false, data: response.data };
+      })
+      .catch(function (error) {
+        return { error: true, data: error };
+      });
+  }
+
   async loadHolon(
     data = {
       providerType: "Default",
@@ -38,15 +49,7 @@ class Data {
         },
       };
 
-      return axios(config)
-        .then(function (response) {
-          if (response.data.isError)
-            return { error: true, data: response.data };
-          else return { error: false, data: response.data };
-        })
-        .catch(function (error) {
-          return { error: true, data: error };
-        });
+      return this._returnState(config);
     } else if (typeof data === "object") {
       const config = {
         method: "post",
@@ -57,15 +60,7 @@ class Data {
         data: JSON.stringify(data),
       };
 
-      return axios(config)
-        .then(function (response) {
-          if (response.data.isError)
-            return { error: true, data: response.data };
-          else return { error: false, data: response.data };
-        })
-        .catch(function (error) {
-          return { error: true, data: error };
-        });
+      return this._returnState(config);
     }
   }
 
@@ -102,38 +97,19 @@ class Data {
         },
       };
 
-      return axios(config)
-        .then(function (response) {
-          if (response.data.isError)
-            return { error: true, data: response.data };
-          else return { error: false, data: response.data };
-        })
-        .catch(function (error) {
-          return { error: true, data: error };
-        });
-    }
+      return this._returnState(config);
+    } else if (typeof data === "object") {
+      const config = {
+        method: "post",
+        url: `https://api.oasisplatform.world/api/data/load-all-holons`,
+        headers: {
+          Authorization: `Bearer ${this.token.jwtToken}`,
+        },
+        data: JSON.stringify(data),
+      };
 
-    else if (typeof data === "object"){
-    const config = {
-      method: "post",
-      url: `https://api.oasisplatform.world/api/data/load-all-holons`,
-      headers: {
-        Authorization: `Bearer ${this.token.jwtToken}`,
-      },
-      data: JSON.stringify(data),
-    };
-
-    return axios(config)
-      .then(function (response) {
-        if (response.data.isError) return { error: true, data: response.data };
-        else return { error: false, data: response.data };
-      })
-      .catch(function (error) {
-        return { error: true, data: error };
-      });
-    }
-
-    else if (typeof data === "string") {
+      return this._returnState(config);
+    } else if (typeof data === "string") {
       const config = {
         method: "get",
         url: `https://api.oasisplatform.world/api/data/load-all-holons/${data}`,
@@ -142,15 +118,7 @@ class Data {
         },
       };
 
-      return axios(config)
-        .then(function (response) {
-          if (response.data.isError)
-            return { error: true, data: response.data };
-          else return { error: false, data: response.data };
-        })
-        .catch(function (error) {
-          return { error: true, data: error };
-        });
+      return this._returnState(config);
     }
   }
 
@@ -186,15 +154,7 @@ class Data {
         },
       };
 
-      return axios(config)
-        .then(function (response) {
-          if (response.data.isError)
-            return { error: true, data: response.data };
-          else return { error: false, data: response.data };
-        })
-        .catch(function (error) {
-          return { error: true, data: error };
-        });
+      return this._returnState(config);
     } else if (typeof data === "object") {
       const config = {
         method: "post",
@@ -205,16 +165,8 @@ class Data {
         data: JSON.stringify(data),
       };
 
-      return axios(config)
-        .then(function (response) {
-          if (response.data.isError)
-            return { error: true, data: response.data };
-          else return { error: false, data: response.data };
-        })
-        .catch(function (error) {
-          return { error: true, data: error };
-        });
-    } 
+      return this._returnState(config);
+    }
   }
 
   async saveHolon(data) {
@@ -231,14 +183,7 @@ class Data {
       data,
     };
 
-    return axios(config)
-      .then(function (response) {
-        if (response.data.isError) return { error: true, data: response.data };
-        else return { error: false, data: response.data };
-      })
-      .catch(function (error) {
-        return { error: true, data: error };
-      });
+    return this._returnState(config);
   }
 
   async saveHolonOffChain(data) {
@@ -255,14 +200,7 @@ class Data {
       data,
     };
 
-    return axios(config)
-      .then(function (response) {
-        if (response.data.isError) return { error: true, data: response.data };
-        else return { error: false, data: response.data };
-      })
-      .catch(function (error) {
-        return { error: true, data: error };
-      });
+    return this._returnState(config);
   }
 
   async deleteHolon(
@@ -282,14 +220,7 @@ class Data {
       },
     };
 
-    return axios(config)
-      .then(function (response) {
-        if (response.data.isError) return { error: true, data: response.data };
-        else return { error: false, data: response.data };
-      })
-      .catch(function (error) {
-        return { error: true, data: error };
-      });
+    return this._returnState(config);
   }
 }
 

@@ -6,6 +6,17 @@ class Solana {
     this.avatar = new Avatar();
   }
 
+  _returnState(config) {
+    return axios(config)
+      .then(function (response) {
+        if (response.data.isError) return { error: true, data: response.data };
+        else return { error: false, data: response.data };
+      })
+      .catch(function (error) {
+        return { error: true, data: error };
+      });
+  }
+
   async mint(data) {
     data = JSON.stringify(data);
     this.token = await this.avatar.callLogin();
@@ -20,14 +31,7 @@ class Solana {
       data,
     };
 
-    return axios(config)
-      .then(function (response) {
-        if (response.data.isError) return { error: true, data: response.data };
-        else return { error: false, data: response.data };
-      })
-      .catch(function (error) {
-        return { error: true, data: error };
-      });
+    return this._returnState(config)
   }
 
   async exchange(
@@ -58,14 +62,7 @@ class Solana {
       data,
     };
 
-    return axios(config)
-      .then(function (response) {
-        if (response.data.isError) return { error: true, data: response.data };
-        else return { error: false, data: response.data };
-      })
-      .catch(function (error) {
-        return { error: true, data: error };
-      });
+    return this._returnState(config)
   }
 }
 
