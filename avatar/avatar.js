@@ -9,6 +9,18 @@ class Avatar {
     }
     this.callLogin();
   }
+
+  _returnState(config) {
+    return axios(config)
+      .then(function (response) {
+        if (response.data.isError) return { error: true, data: response.data };
+        else return { error: false, data: response.data };
+      })
+      .catch(function (error) {
+        return { error: true, data: error };
+      });
+  }
+
   async callLogin(obj = this) {
     if (JSON.parse(localStorage.getItem("login"))) {
       const credentials = JSON.parse(localStorage.getItem("login"));
@@ -38,18 +50,7 @@ class Avatar {
       },
     };
 
-    return axios(config)
-      .then(function (response) {
-        if (response.data.isError) {
-          return { error: true, data: response.data };
-        }
-        return { error: false, data: response.data };
-      })
-
-      .catch(function (error) {
-        console.log(error);
-        return { error: true, data: error };
-      });
+    return this._returnState(config);
   }
 
   async get(id) {
@@ -69,16 +70,7 @@ class Avatar {
       },
     };
 
-    return axios(config)
-      .then(function (response) {
-        if (response.data.isError) {
-          return { error: true, data: res.data };
-        }
-        return { error: false, data: response.data };
-      })
-      .catch(function (error) {
-        return { error: true, data: error };
-      });
+    return this._returnState(config);
   }
 
   async update(id, data) {
@@ -100,18 +92,7 @@ class Avatar {
       data,
     };
 
-    return axios(config)
-      .then(function (response) {
-        if (res.data.isError) {
-          return { error: true, data: res.data };
-        }
-        return { error: false, data: response.data };
-      })
-
-      .catch(function (error) {
-        console.log(error);
-        return { error: true, data: error };
-      });
+    return this._returnState(config);
   }
 
   async delete(id) {
@@ -128,18 +109,7 @@ class Avatar {
       },
     };
 
-    return axios(config)
-      .then(function (response) {
-        if (res.data.isError) {
-          return { error: true, data: res.data };
-        }
-        return { error: false, data: response.data };
-      })
-
-      .catch(function (error) {
-        console.log(error);
-        return { error: true, data: error };
-      });
+    return this._returnState(config);
   }
 
   async addKarma(
@@ -165,18 +135,7 @@ class Avatar {
       },
       data,
     };
-    return axios(config)
-      .then(function (response) {
-        if (res.data.isError) {
-          return { error: true, data: res.data };
-        }
-        return { error: false, data: response.data };
-      })
-
-      .catch(function (error) {
-        console.log(error);
-        return { error: true, data: error };
-      });
+    return this._returnState(config);
   }
 
   async removeKarma(
@@ -203,18 +162,7 @@ class Avatar {
         "Content-Type": "application/json",
       },
     };
-    return axios(config)
-      .then(function (response) {
-        if (res.data.isError) {
-          return { error: true, data: res.data };
-        }
-        return { error: false, data: response.data };
-      })
-
-      .catch(function (error) {
-        console.log(error);
-        return { error: true, data: error };
-      });
+    return this._returnState(config);
   }
 }
 

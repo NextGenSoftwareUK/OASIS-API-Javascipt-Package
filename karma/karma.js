@@ -6,6 +6,17 @@ class Karma {
     this.avatar = new Avatar();
   }
 
+  _returnState(config) {
+    return axios(config)
+      .then(function (response) {
+        if (response.data.isError) return { error: true, data: response.data };
+        else return { error: false, data: response.data };
+      })
+      .catch(function (error) {
+        return { error: true, data: error };
+      });
+  }
+
   async getKarmaForAvatar(id) {
     this.token = await this.avatar.callLogin();
     if (this.token === -1)
@@ -19,14 +30,7 @@ class Karma {
       },
     };
 
-    return axios(config)
-      .then(function (response) {
-        if (response.data.isError) return { error: true, data: response.data };
-        else return { error: false, data: response.data };
-      })
-      .catch(function (error) {
-        return { error: true, data: error };
-      });
+    return this._returnState(config)
   }
 
   async removeKarmaFromAvatar(
@@ -52,14 +56,7 @@ class Karma {
       data,
     };
 
-    return axios(config)
-      .then(function (response) {
-        if (response.data.isError) return { error: true, data: response.data };
-        else return { error: false, data: response.data };
-      })
-      .catch(function (error) {
-        return { error: true, data: error };
-      });
+    return this._returnState(config)
   }
 
   async getKarmaAkashicRecordsForAvatar(id) {
@@ -75,14 +72,7 @@ class Karma {
       },
     };
 
-    return axios(config)
-      .then(function (response) {
-        if (response.data.isError) return { error: true, data: response.data };
-        else return { error: false, data: response.data };
-      })
-      .catch(function (error) {
-        return { error: true, data: error };
-      });
+    return this._returnState(config)
   }
 }
 
