@@ -85,6 +85,9 @@ https://www.npmjs.com/package/oasis-api
 
 This previous version has now been deprecated (unfortunaltey npm will not let you rename an existing package so when we renamed oasis-api to web4-oasis-api it has forced us to create this new version of the package). We are currently keeping the older version to preserve the version history, download stats, etc.
 
+The current version can be found here:
+https://www.npmjs.com/package/web4-oasis-api
+
 ## Introduction
 
 This package is for client applications to connect and work with the OASIS API.
