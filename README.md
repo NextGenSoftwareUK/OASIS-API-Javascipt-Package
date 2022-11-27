@@ -1,6 +1,7 @@
 # WEB4 OASIS API Javascript Package
 
 - [WEB4 OASIS API Javascript Package](#web4-oasis-api-javascript-package)
+  - [Previous Version](#previous-version)
   - [Introduction](#introduction)
   - [Overview](#overview)
     - [Best Of All Worlds](#best-of-all-worlds)
